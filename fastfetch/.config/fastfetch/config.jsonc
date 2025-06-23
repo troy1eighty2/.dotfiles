@@ -1,34 +1,128 @@
+
 {
-  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
-  "modules": [
-    "title",
-    "separator",
-    "os",
-    "host",
-    "kernel",
-    "uptime",
-    "packages",
-    "shell",
-    "display",
-    "de",
-    "wm",
-    "wmtheme",
-    "theme",
-    "icons",
-    "font",
-    "cursor",
-    "terminal",
-    "terminalfont",
-    "cpu",
-    "gpu",
-    "memory",
-    "swap",
-    "disk",
-    "localip",
-    "battery",
-    "poweradapter",
-    "locale",
+"$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+"logo": {
+	"source": "/home/troy_chan55/.dotfiles/Wallpapers/Wallpapers/neonoir.jpg",
+	"type": "auto",
+	"height": 20,
+	"width": 60,
+	"padding": {
+		"top": 1,
+		"left": 2,
+		"right": 1,
+		"bottom": 0
+	}
+},
+"display": {
+"separator": " "
+},
+"modules": [
     "break",
-    "colors"
-  ]
+    "break",
+    {
+    "type": "os",
+    "key": " DISTRO",
+    "keyColor": "yellow"
+    },
+    {
+    "type": "kernel", "key": "│ ├ ",
+    "keyColor": "yellow"
+    },
+    {
+    "type": "packages",
+    "key": "│ ├ 󰏖",
+    "keyColor": "yellow"
+    },
+    {
+    "type": "shell",
+    "key": "│ └ ",
+    "keyColor": "yellow"
+    },
+    {
+    "type": "wm",
+    "key": " DE/WM",
+    "keyColor": "blue"
+    },
+    {
+    "type": "wmtheme",
+    "key": "│ ├ 󰉼",
+    "keyColor": "blue"
+    },
+    {
+    "type": "icons",
+    "key": "│ ├ 󰀻",
+    "keyColor": "blue"
+    },
+    {
+        "type": "cursor",
+        "key": "│ ├ ",
+        "keyColor": "blue",
+    },
+    {
+        "type": "terminalfont",
+        "key": "│ ├ ",
+        "keyColor": "blue",
+    },
+    {
+    "type": "terminal",
+    "key": "│ └ ",
+    "keyColor": "blue"
+    },
+    {
+    "type": "host",
+    "key": "󰌢 SYSTEM",
+    "keyColor": "green"
+    },
+    {
+    "type": "cpu",
+    "key": "│ ├ 󰻠",
+    "keyColor": "green"
+    },
+    {
+    "type": "gpu",
+    "key": "│ ├ 󰻑",
+    "format": "{2}",
+    "keyColor": "green"
+    },
+    {
+            "type": "display",
+    "key": "│ ├ 󰍹",
+    "keyColor": "green",
+    "compactType": "original-with-refresh-rate"
+    },
+    {
+    "type": "memory",
+    "key": "│ ├ 󰾆",
+    "keyColor": "green"
+    },
+    {
+    "type": "uptime",
+    "key": "│ ├ 󰅐",
+    "keyColor": "green"
+    },
+    {
+    "type": "display",
+    "key": "│ └ 󰍹",
+    "keyColor": "green"
+    },
+    {
+    "type": "sound",
+    "key": " AUDIO",
+    "format": "{2}",
+    },
+    {
+    "type": "player",
+    "key": "│ ├ 󰥠",
+    },
+    {
+    "type": "media",
+    "key": "│ └ 󰝚",
+    },
+    "break",
+    {
+    "type": "custom",
+    "format": "       \u001b[38;5;42m   \u001b[38;5;22m   \u001b[38;5;16m   \u001b[38;5;30m   \u001b[38;5;34m   \u001b[38;5;36m   \u001b[38;5;40m   \u001b[38;5;8m"
+    },
+    "break",
+    ]
 }

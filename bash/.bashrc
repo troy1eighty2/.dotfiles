@@ -2,6 +2,7 @@
 # ~/.bashrc
 #
 
+# akdwj
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
@@ -18,4 +19,9 @@ alias sourcebash='source /home/troy_chan55/.bashrc'
 
 PS1='[\u@\h \W]\$ '
 
-fastfetch
+alias ff='fastfetch --config /home/troy_chan55/.dotfiles/fastfetch/.config/fastfetch/config.jsonc'
+alias ffs='fastfetch --config /home/troy_chan55/.dotfiles/fastfetch/.config/fastfetch/configshort.jsonc'
+
+eval "$(starship init bash)"
+
+ffs
