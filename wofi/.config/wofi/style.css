@@ -2,7 +2,7 @@
   font- family: "MonaspiceKr Nerd Font"
 }
 window {
-border-radius: 10px;
+  border-radius: 10px;
 /* margin: 50px; */
 /* border: 2px solid red; */
 /* background-color: red; */
@@ -12,6 +12,7 @@ border-radius: 10px;
 margin: 5px;
 /* border: 2px solid blue; */
 /* background-color: blue; */
+  border-radius: 10px;
 
 }
 
@@ -40,4 +41,8 @@ border-radius: 10px;
 /* margin: 5px; */
 /* border: 2px solid cyan; */
 /* background-color: cyan; */
-} 
+}
+#entry:selected {
+  background: linear-gradient(70deg,#FE6869, #FFCF75,#FFFFFF,#7BF5A9,#57E5EA);
+  border-radius:10px;
+}
