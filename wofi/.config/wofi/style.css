@@ -1,0 +1,43 @@
+*{
+  font- family: "MonaspiceKr Nerd Font"
+}
+window {
+border-radius: 10px;
+/* margin: 50px; */
+/* border: 2px solid red; */
+/* background-color: red; */
+}
+
+#input {
+margin: 5px;
+/* border: 2px solid blue; */
+/* background-color: blue; */
+
+}
+
+
+#inner-box {
+/* margin: 5px; */
+/* border: 2px solid yellow; */
+/* background-color: yellow; */
+border-radius: 10px;
+}
+
+#outer-box {
+/* margin: 5px; */
+/* background-color: green; */
+border-radius: 10px;
+}
+
+#scroll {
+/* margin: 5px; */
+/* border: 2px solid orange; */
+/* background-color: orange; */
+border-radius: 10px;
+}
+
+#text {
+/* margin: 5px; */
+/* border: 2px solid cyan; */
+/* background-color: cyan; */
+} 
