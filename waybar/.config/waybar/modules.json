@@ -2,7 +2,7 @@
     "backlight": {
 	"icon-size":20,
         "device": "intel_backlight",
-        "format": "󰃟  {percent}% "
+        "format": "󰃟 {percent}% "
     },
     "custom/arch": {
         "format": "󰣇",
@@ -25,12 +25,11 @@
             "5": "5",
             "6": "6",
             "7": "7",
-            "8": "",
-            "9": "󱓩",
-	    "10":""
+            "8": "8",
+            "9": "",
+            "10": "󱓩",
         },
 	"persistent-workspaces":{
-            "8": "",
 	    "9":"",
 	    "10":""
 	}
@@ -43,11 +42,11 @@
         }
     },
     "pulseaudio": {
-        "format": "{icon}  {volume}%",
+        "format": "{icon} {volume}% ",
         "format-bluetooth": "{icon} {volume}%  {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " {format_source}",
-        "format-source": " {volume}%",
+        "format-bluetooth-muted": "󰝟 {icon}  {format_source}",
+        "format-muted": "󰝟",
+        "format-source": "{volume}%",
         "format-source-muted": "",
         "format-icons": {
             "headphone": "",
@@ -61,7 +60,7 @@
         "on-click": "pavucontrol"
     },
     "network": {
-        "format-wifi": "  {essid} ({signalStrength}%)",
+        "format-wifi": "  {essid}({signalStrength}%)",
         "format-ethernet": "{ipaddr}/{cidr} ",
         "tooltip-format": "{ifname} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
@@ -70,7 +69,7 @@
 	 
     },
     "cpu": {
-        "format": "  {usage}%",
+        "format": " {usage}%",
         "tooltip": true
     },
     "memory": {
@@ -94,10 +93,10 @@
             "warning": 30,
             "critical": 15
         },
-        "format": "{icon}  {capacity}%",
-        "format-full": "{icon}  {capacity}%",
-        "format-charging": "  {capacity}%",
-        "format-plugged": "  {capacity}%",
+        "format": "{icon} {capacity}%",
+        "format-full": "{icon} {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
         "format-alt": "{time}  {icon}",
         "format-icons": ["", "", "", "", ""]
     },
