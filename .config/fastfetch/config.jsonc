@@ -1,111 +1,111 @@
 
 {
-"$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
-"logo": {
-	"source": "/home/troy_chan55/.dotfiles/Wallpapers/Wallpapers/neonoir.jpg",
-	"type": "auto",
-	"height": 20,
-	"width": 60,
-	"padding": {
-		"top": 1,
-		"left": 2,
-		"right": 1,
-		"bottom": 0
-	}
-},
-"display": {
-"separator": " "
-},
-"modules": [
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "source": "/home/troy_chan55/.dotfiles/Wallpapers/Wallpapers/neonoir.jpg",
+    "type": "auto",
+    "height": 20,
+    "width": 60,
+    "padding": {
+      "top": 1,
+      "left": 2,
+      "right": 1,
+      "bottom": 0
+    }
+  },
+  "display": {
+    "separator": " "
+  },
+  "modules": [
     "break",
     "break",
     {
-    "type": "os",
-    "key": " DISTRO",
+      "type": "os",
+      "key": " DISTRO",
     },
     {
-    "type": "kernel", "key": "│ ├ ",
+      "type": "kernel", "key": "│ ├ ",
     },
     {
-    "type": "packages",
-    "key": "│ ├ 󰏖",
+      "type": "packages",
+      "key": "│ ├ 󰏖",
     },
     {
-    "type": "shell",
-    "key": "│ └ ",
+      "type": "shell",
+      "key": "│ └ ",
     },
     {
-    "type": "wm",
-    "key": " DE/WM",
+      "type": "wm",
+      "key": " DE/WM",
     },
     {
-    "type": "wmtheme",
-    "key": "│ ├ 󰉼",
+      "type": "wmtheme",
+      "key": "│ ├ 󰉼",
     },
     {
-    "type": "icons",
-    "key": "│ ├ 󰀻",
+      "type": "icons",
+      "key": "│ ├ 󰀻",
     },
     {
-        "type": "cursor",
-        "key": "│ ├ ",
+      "type": "cursor",
+      "key": "│ ├ ",
     },
     {
-        "type": "terminalfont",
-        "key": "│ ├ ",
+      "type": "terminalfont",
+      "key": "│ ├ ",
     },
     {
-    "type": "terminal",
-    "key": "│ └ ",
+      "type": "terminal",
+      "key": "│ └ ",
     },
     {
-    "type": "host",
-    "key": "󰌢 SYSTEM",
+      "type": "host",
+      "key": "󰌢 SYSTEM",
     },
     {
-    "type": "cpu",
-    "key": "│ ├ 󰻠",
+      "type": "cpu",
+      "key": "│ ├ 󰻠",
     },
     {
-    "type": "gpu",
-    "key": "│ ├ 󰻑",
-    "format": "{2}",
+      "type": "gpu",
+      "key": "│ ├ 󰻑",
+      "format": "{2}",
     },
     {
-            "type": "display",
-    "key": "│ ├ 󰍹",
-    "compactType": "original-with-refresh-rate"
+      "type": "display",
+      "key": "│ ├ 󰍹",
+      "compactType": "original-with-refresh-rate"
     },
     {
-    "type": "memory",
-    "key": "│ ├ 󰾆",
+      "type": "memory",
+      "key": "│ ├ 󰾆",
     },
     {
-    "type": "uptime",
-    "key": "│ ├ 󰅐",
+      "type": "uptime",
+      "key": "│ ├ 󰅐",
     },
     {
-    "type": "display",
-    "key": "│ └ 󰍹",
+      "type": "display",
+      "key": "│ └ 󰍹",
     },
     {
-    "type": "sound",
-    "key": " AUDIO",
-    "format": "{2}",
+      "type": "sound",
+      "key": " AUDIO",
+      "format": "{2}",
     },
     {
-    "type": "player",
-    "key": "│ ├ 󰥠",
+      "type": "player",
+      "key": "│ ├ 󰥠",
     },
     {
-    "type": "media",
-    "key": "│ └ 󰝚",
+      "type": "media",
+      "key": "│ └ 󰝚",
     },
     "break",
     {
-    "type": "custom",
-    "format": "       \u001b[38;5;42m   \u001b[38;5;22m   \u001b[38;5;16m   \u001b[38;5;30m   \u001b[38;5;34m   \u001b[38;5;36m   \u001b[38;5;40m   \u001b[38;5;8m"
+      "type": "custom",
+      "format": "       \u001b[38;5;42m   \u001b[38;5;22m   \u001b[38;5;16m   \u001b[38;5;30m   \u001b[38;5;34m   \u001b[38;5;36m   \u001b[38;5;40m   \u001b[38;5;8m"
     },
     "break",
-    ]
+  ]
 }

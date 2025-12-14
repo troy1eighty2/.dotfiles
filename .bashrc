@@ -17,6 +17,7 @@ alias lock='hyprlock'
 alias ms="cd $HOMEPATH/MyStuff"
 alias shutdown="shutdown now"
 alias editbash="vim $HOMEPATH/.bashrc"
+alias editinstall="vim $HOMEPATH/.dotfiles/install.sh"
 alias sobash="source $HOMEPATH/.bashrc"
 alias soenv="source $MYSTUFF/venv/bin/activate" 
 alias edots="vim $HOMEPATH/.dotfiles"
@@ -38,8 +39,8 @@ alias r0="hyprctl keyword monitor eDP-1,preferred,auto,1,transform,0"
 
 PS1='[\u@\h \W]\$ '
 
-alias ff='fastfetch --config /home/troy_chan55/.dotfiles/fastfetch/.config/fastfetch/config.jsonc'
-alias ffs='fastfetch --config /home/troy_chan55/.dotfiles/fastfetch/.config/fastfetch/configshort.jsonc'
+alias ff='fastfetch --config /home/troy_chan55/.dotfiles/.config/fastfetch/config.jsonc'
+alias ffs='fastfetch --config /home/troy_chan55/.dotfiles/.config/fastfetch/configshort.jsonc'
 
 
 alias vysor='./home/troy_chan55/builds/vysor-bin/usr/bin/vysorapp'

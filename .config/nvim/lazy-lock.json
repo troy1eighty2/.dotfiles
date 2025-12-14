@@ -1,7 +1,7 @@
 {
   "flash.nvim": { "branch": "main", "commit": "b68bda044d68e4026c4e1ec6df3c5afd7eb8e341" },
   "harpoon": { "branch": "master", "commit": "1bc17e3e42ea3c46b33c0bbad6a880792692a1b3" },
-  "lazy.nvim": { "branch": "main", "commit": "6c3bda4aca61a13a9c63f1c1d1b16b9d3be90d7a" },
+  "lazy.nvim": { "branch": "main", "commit": "85c7ff3711b730b4030d03144f6db6375044ae82" },
   "mason-lspconfig.nvim": { "branch": "main", "commit": "a1067cf84b4ff81b66d2bf4d01f4cbdb5de40bd0" },
   "mason.nvim": { "branch": "main", "commit": "7dc4facca9702f95353d5a1f87daf23d78e31c2a" },
   "nvim-lspconfig": { "branch": "master", "commit": "33d351cbcc2b12b8e12078515829d042863743a9" },

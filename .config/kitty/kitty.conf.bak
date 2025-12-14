@@ -334,7 +334,7 @@
 #: Stop blinking cursor after the specified number of seconds of
 #: keyboard inactivity. Set to zero to never stop blinking.
 
-# cursor_trail 0
+ cursor_trail 1
 
 #: Set this to a value larger than zero to enable a "cursor trail"
 #: animation. This is an animation that shows a "trail" following the
@@ -362,7 +362,7 @@
 #: trail. Adjust these values to control how quickly the cursor trail
 #: fades away.
 
-# cursor_trail_start_threshold 2
+#cursor_trail_start_threshold 0
 
 #: Set the distance threshold for starting the cursor trail. This
 #: option accepts a positive integer value that represents the minimum
@@ -1317,7 +1317,7 @@
 
 #: The foreground and background colors.
 
-# background_opacity 1.0
+ background_opacity .5
 
 #: The opacity of the background. A number between zero and one, where
 #: one is opaque and zero is fully transparent. This will only work if
@@ -2787,7 +2787,7 @@
 
 
 # BEGIN_KITTY_FONTS
-font_family      family="JetBrainsMono Nerd Font Mono"
+font_family      family="0xProto NL"
 bold_font        auto
 italic_font      auto
 bold_italic_font auto
