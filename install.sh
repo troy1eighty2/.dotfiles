@@ -6,7 +6,10 @@ if [[ $EUID -ne 0 ]]; then
 fi
 
 BACKUP_DEVICE_PATH="/dev/sda1"
-UUID=$(blkid -s UUID -o value "$BACKUP_DEVICE_PATH")
+BOOT_DEVICE_ROOT_PATH="/dev/nvme0n1p2"
+
+BACKUP_DEVICE_UUID=$(blkid -s UUID -o value "$BACKUP_DEVICE_PATH")
+BOOT_DEVICE_ROOT_UUID=$(blkid -s UUID -o value "$BOOT_DEVICE_ROOT_PATH")
 
 
 printf "\n\t Starting install script\n"
@@ -44,6 +47,10 @@ base-devel \
 fontconfig \
 hyprshot \
 hyprlock \
+tmux \
+keyd \
+otf-font-awesome \
+ttf-space-mono-nerd \
 hyprpaper
 
 printf "\n\t Package installation complete\n"
@@ -88,24 +95,74 @@ printf "\n\t Flatpak installation complete\n"
 # printf "\n"
 #
 # #systemd
-# sudo systemctl enable --now pcscd.service
-# sudo systemctl enable --now bluetooth.service
-#
+systemctl enable --now pcscd.service
+systemctl enable --now bluetooth.service
+systemctl enable --now keyd 
+
 # printf "\n\t Systemd configuration complete\n"
 printf "\n\t Configuring fonts\n"
 printf "\n"
 
 #fonts
+fc-cache
 mkdir -p /usr/local/share/fonts/
 
 printf "\n\t Font configuration complete\n"
-printf "\n\t Configuring Internal SSD\n"
+printf "\n\t Configuring Mounts\n"
 
-mkdir -p "/mnt/ssd-backups"
+mkdir -p /mnt/ssd-backups
+mkdir -p /pkg
+mkdir -p /log
+
 
 if ! grep -q "UUID=$UUID" /etc/fstab; then
   echo "UUID=$UUID  /mnt/ssd-backups auto  defaults,nofail  0  2" >> /etc/fstab
 fi
 
-printf "\n\t Internal SSD Configuration Complete\n"
-printf "\n\t Installation done.\n"
+if ! mountpoint /mnt/ssd-backups
+then
+  mount $BACKUP_DEVICE_PATH /mnt/ssd-backups
+fi
+
+if ! grep -q "UUID=$BOOT_DEVICE_ROOT_UUID.*subvol=@," /etc/fstab
+then
+  echo "UUID=$BOOT_DEVICE_ROOT_UUID / auto  subvol=@,defaults,nofail 0 2" >> /etc/fstab
+fi
+if ! grep -q "UUID=$BOOT_DEVICE_ROOT_UUID.*subvol=@.snapshots," /etc/fstab
+then
+  echo "UUID=$BOOT_DEVICE_ROOT_UUID /.snapshots auto  subvol=@.snapshots,defaults,nofail 0 1" >> /etc/fstab
+fi
+if ! grep -q "UUID=$BOOT_DEVICE_ROOT_UUID.*subvol=@home," /etc/fstab
+then
+  echo "UUID=$BOOT_DEVICE_ROOT_UUID /home auto  subvol=@home,defaults,nofail 0 1" >> /etc/fstab
+fi
+if ! grep -q "UUID=$BOOT_DEVICE_ROOT_UUID.*subvol=@log," /etc/fstab
+then
+  echo "UUID=$BOOT_DEVICE_ROOT_UUID /log auto  subvol=@log,defaults,nofail 0 1" >> /etc/fstab
+fi
+if ! grep -q "UUID=$BOOT_DEVICE_ROOT_UUID.*subvol=@pkg," /etc/fstab
+then
+  echo "UUID=$BOOT_DEVICE_ROOT_UUID /pkg auto  subvol=@pkg,defaults,nofail 0 1" >> /etc/fstab
+fi
+
+
+printf "\n\t Mount Configuration Complete\n"
+printf "\n\t Configuring remaps\n"
+printf "\n"
+if [[ ! -f /etc/keyd/default.conf ]]; then
+  cat << 'EOF' > /etc/keyd/default.conf
+[ids]
+
+*
+
+[main]
+
+#capslock = overload(control, esc)
+capslock = esc
+EOF
+fi
+keyd reload
+printf "\n\t Remap configuration complete\n"
+
+
+printf "\n\t Installation done. Reboot to finish.\n"
