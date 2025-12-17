@@ -49,6 +49,7 @@ hyprshot \
 hyprlock \
 tmux \
 keyd \
+snapper \
 otf-font-awesome \
 ttf-space-mono-nerd \
 hyprpaper
@@ -115,14 +116,6 @@ mkdir -p /pkg
 mkdir -p /log
 
 
-if ! grep -q "UUID=$BACKUP_DEVICE_UUID" /etc/fstab; then
-  echo "UUID=$BACKUP_DEVICE_UUID  /mnt/ssd-backups btrfs defaults,nofail  0  2" >> /etc/fstab
-fi
-
-if ! mountpoint /mnt/ssd-backups
-then
-  mount $BACKUP_DEVICE_PATH /mnt/ssd-backups
-fi
 
 if ! grep -q "UUID=$BOOT_DEVICE_ROOT_UUID.*subvol=@," /etc/fstab
 then
@@ -144,6 +137,13 @@ if ! grep -q "UUID=$BOOT_DEVICE_ROOT_UUID.*subvol=@pkg," /etc/fstab
 then
   echo "UUID=$BOOT_DEVICE_ROOT_UUID /pkg btrfs subvol=@pkg,defaults,nofail 0 2" >> /etc/fstab
 fi
+if ! grep -q "UUID=$BACKUP_DEVICE_UUID" /etc/fstab; then
+  echo "UUID=$BACKUP_DEVICE_UUID /mnt/ssd-backups auto defaults,nofail 0 2" >> /etc/fstab
+fi
+if ! mountpoint /mnt/ssd-backups
+then
+  mount $BACKUP_DEVICE_PATH /mnt/ssd-backups
+fi
 
 
 printf "\n\t Mount Configuration Complete\n"
@@ -163,6 +163,17 @@ EOF
 fi
 keyd reload
 printf "\n\t Remap configuration complete\n"
+printf "\n\t Configuring snapper\n"
+printf "\n"
+
+if ! snapper list-configs | grep -q '^root'; then
+  snapper -c root create-config / 
+fi
+if ! snapper list-configs | grep -q '^home'; then
+  snapper -c home create-config /home
+fi
+
+printf "\n\t Snapper configuration complete\n"
 
 
 printf "\n\t Installation done. Reboot to finish.\n"
