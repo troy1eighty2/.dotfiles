@@ -115,8 +115,8 @@ mkdir -p /pkg
 mkdir -p /log
 
 
-if ! grep -q "UUID=$UUID" /etc/fstab; then
-  echo "UUID=$UUID  /mnt/ssd-backups auto  defaults,nofail  0  2" >> /etc/fstab
+if ! grep -q "UUID=$BACKUP_DEVICE_UUID" /etc/fstab; then
+  echo "UUID=$BACKUP_DEVICE_UUID  /mnt/ssd-backups btrfs defaults,nofail  0  2" >> /etc/fstab
 fi
 
 if ! mountpoint /mnt/ssd-backups
@@ -126,23 +126,23 @@ fi
 
 if ! grep -q "UUID=$BOOT_DEVICE_ROOT_UUID.*subvol=@," /etc/fstab
 then
-  echo "UUID=$BOOT_DEVICE_ROOT_UUID / auto  subvol=@,defaults,nofail 0 2" >> /etc/fstab
+  echo "UUID=$BOOT_DEVICE_ROOT_UUID / btrfs subvol=@,defaults,nofail 0 1" >> /etc/fstab
 fi
 if ! grep -q "UUID=$BOOT_DEVICE_ROOT_UUID.*subvol=@.snapshots," /etc/fstab
 then
-  echo "UUID=$BOOT_DEVICE_ROOT_UUID /.snapshots auto  subvol=@.snapshots,defaults,nofail 0 1" >> /etc/fstab
+  echo "UUID=$BOOT_DEVICE_ROOT_UUID /.snapshots btrfs subvol=@.snapshots,defaults,nofail 0 2" >> /etc/fstab
 fi
 if ! grep -q "UUID=$BOOT_DEVICE_ROOT_UUID.*subvol=@home," /etc/fstab
 then
-  echo "UUID=$BOOT_DEVICE_ROOT_UUID /home auto  subvol=@home,defaults,nofail 0 1" >> /etc/fstab
+  echo "UUID=$BOOT_DEVICE_ROOT_UUID /home btrfs subvol=@home,defaults,nofail 0 2" >> /etc/fstab
 fi
 if ! grep -q "UUID=$BOOT_DEVICE_ROOT_UUID.*subvol=@log," /etc/fstab
 then
-  echo "UUID=$BOOT_DEVICE_ROOT_UUID /log auto  subvol=@log,defaults,nofail 0 1" >> /etc/fstab
+  echo "UUID=$BOOT_DEVICE_ROOT_UUID /log btrfs subvol=@log,defaults,nofail 0 2" >> /etc/fstab
 fi
 if ! grep -q "UUID=$BOOT_DEVICE_ROOT_UUID.*subvol=@pkg," /etc/fstab
 then
-  echo "UUID=$BOOT_DEVICE_ROOT_UUID /pkg auto  subvol=@pkg,defaults,nofail 0 1" >> /etc/fstab
+  echo "UUID=$BOOT_DEVICE_ROOT_UUID /pkg btrfs subvol=@pkg,defaults,nofail 0 2" >> /etc/fstab
 fi
 
 
