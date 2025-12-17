@@ -8,3 +8,31 @@
 2025-12-12 23:08:34 Success.
 2025-12-12 23:08:34 Latest version is 1.10.6
 2025-12-12 23:08:34 App is up to date.
+2025-12-15 11:10:35 Loading main app package /usr/lib/obsidian/obsidian.asar
+2025-12-15 11:10:36 Checking for update using Github
+2025-12-15 11:10:36 Success.
+2025-12-15 11:10:36 Latest version is 1.10.6
+2025-12-15 11:10:36 App is up to date.
+2025-12-15 11:47:10 Loading main app package /usr/lib/obsidian/obsidian.asar
+2025-12-15 11:47:10 Checking for update using Github
+2025-12-15 11:47:13 Success.
+2025-12-15 11:47:13 Latest version is 1.10.6
+2025-12-15 11:47:13 App is up to date.
+2025-12-15 14:07:31 Checking for update using Github
+2025-12-15 14:07:32 Success.
+2025-12-15 14:07:32 Latest version is 1.10.6
+2025-12-15 14:07:32 App is up to date.
+2025-12-15 15:07:31 Checking for update using Github
+2025-12-15 15:09:46 Failed to check for update using Github (net::ERR_CONNECTION_TIMED_OUT)
+2025-12-15 15:09:46 Checking for update using obsidian.md
+2025-12-15 15:09:47 Failed to check for update using obsidian.md (Unexpected end of JSON input)
+2025-12-16 22:33:54 Loading main app package /usr/lib/obsidian/obsidian.asar
+2025-12-16 22:33:54 Checking for update using Github
+2025-12-17 01:01:10 Checking for update using Github
+2025-12-17 01:01:11 Success.
+2025-12-17 01:01:11 Latest version is 1.10.6
+2025-12-17 01:01:11 App is up to date.
+2025-12-17 05:36:37 Checking for update using Github
+2025-12-17 05:36:38 Success.
+2025-12-17 05:36:38 Latest version is 1.10.6
+2025-12-17 05:36:38 App is up to date.

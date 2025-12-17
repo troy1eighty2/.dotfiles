@@ -1,11 +1,20 @@
 #!/bin/bash
+set -euo pipefail
+if [[ $EUID -ne 0 ]]; then
+  echo "Run this script as root (sudo)"
+  exit 1
+fi
+
+BACKUP_DEVICE_PATH="/dev/sda1"
+UUID=$(blkid -s UUID -o value "$BACKUP_DEVICE_PATH")
+
 
 printf "\n\t Starting install script\n"
 printf "\n\t Installing packages\n"
 printf "\n"
 
 #packages
-sudo pacman --noconfirm --needed \
+pacman -S --noconfirm --needed \
 nvim \
 git \
 fastfetch \
@@ -19,14 +28,21 @@ waybar \
 obsidian \
 wine \
 imagemagick \
-tailscale \
 yubikey-manager \
 wl-clipboard \
 unzip \
-bluetui \
 pavucontrol \
 tailscale \
-
+pipewire \
+pipewire-alsa \
+pipewire-pulse \
+wireplumber \
+bluez \
+bluez-utils \
+bluetui \
+base-devel \
+fontconfig \
+hyprshot \
 hyprlock \
 hyprpaper
 
@@ -51,10 +67,10 @@ printf "\n\t Package installation complete\n"
 printf "\n\t Installing flatpak\n"
 printf "\n"
 
-#flatpak
-sudo pacman -S flatpak --noconfirm --needed
-flatpak install flathub com.discordapp.Discord
-flatpak install flathub com.spotify.Client
+pacman -S flatpak --noconfirm --needed
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+flatpak install -y flathub com.discordapp.Discord
+flatpak install -y flathub com.spotify.Client
 
 printf "\n\t Flatpak installation complete\n"
 # printf "\n\t Installing builds\n"
@@ -73,17 +89,23 @@ printf "\n\t Flatpak installation complete\n"
 #
 # #systemd
 # sudo systemctl enable --now pcscd.service
+# sudo systemctl enable --now bluetooth.service
 #
 # printf "\n\t Systemd configuration complete\n"
 printf "\n\t Configuring fonts\n"
 printf "\n"
 
 #fonts
-# sudo mkdir -p /usr/local/share/fonts/
-# sudo wget -P /usr/local/share/fonts -O font.zip https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/0xProto.zip
-sudo pacman -S fontconfig --noconfirm --needed
-#sudo unzip /usr/local/share/fonts/font.zip -d /usr/local/share/fonts
+mkdir -p /usr/local/share/fonts/
 
+printf "\n\t Font configuration complete\n"
+printf "\n\t Configuring Internal SSD\n"
 
-printf "\n\t Jellyfin configuration complete\n"
+mkdir -p "/mnt/ssd-backups"
+
+if ! grep -q "UUID=$UUID" /etc/fstab; then
+  echo "UUID=$UUID  /mnt/ssd-backups auto  defaults,nofail  0  2" >> /etc/fstab
+fi
+
+printf "\n\t Internal SSD Configuration Complete\n"
 printf "\n\t Installation done.\n"
