@@ -5,6 +5,7 @@ if [[ $EUID -ne 0 ]]; then
   exit 1
 fi
 
+USER="troy_chan55"
 BACKUP_DEVICE_PATH="/dev/sda1"
 BOOT_DEVICE_ROOT_PATH="/dev/nvme0n1p2"
 
@@ -52,7 +53,9 @@ keyd \
 snapper \
 otf-font-awesome \
 ttf-space-mono-nerd \
-hyprpaper
+hyprpaper \
+vi \
+cronie
 
 printf "\n\t Package installation complete\n"
 # printf "\n\t Configuring jellyfin\n"
@@ -99,6 +102,7 @@ printf "\n\t Flatpak installation complete\n"
 systemctl enable --now pcscd.service
 systemctl enable --now bluetooth.service
 systemctl enable --now keyd 
+systemctl enable --now cronie.service
 
 # printf "\n\t Systemd configuration complete\n"
 printf "\n\t Configuring fonts\n"
@@ -150,7 +154,7 @@ printf "\n\t Mount Configuration Complete\n"
 printf "\n\t Configuring remaps\n"
 printf "\n"
 if [[ ! -f /etc/keyd/default.conf ]]; then
-  cat << 'EOF' > /etc/keyd/default.conf
+  cat << EOF > /etc/keyd/default.conf
 [ids]
 
 *
@@ -175,5 +179,6 @@ fi
 
 printf "\n\t Snapper configuration complete\n"
 
-
+git config --global user.email "troytran000@gmail.com"
+git config --global user.name "Troy"
 printf "\n\t Installation done. Reboot to finish.\n"
