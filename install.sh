@@ -55,6 +55,7 @@ otf-font-awesome \
 ttf-space-mono-nerd \
 hyprpaper \
 vi \
+brightnessctl \
 cronie
 
 printf "\n\t Package installation complete\n"
@@ -167,17 +168,17 @@ EOF
 fi
 keyd reload
 printf "\n\t Remap configuration complete\n"
-printf "\n\t Configuring snapper\n"
-printf "\n"
-
-if ! snapper list-configs | grep -q '^root'; then
-  snapper -c root create-config / 
-fi
-if ! snapper list-configs | grep -q '^home'; then
-  snapper -c home create-config /home
-fi
-
-printf "\n\t Snapper configuration complete\n"
+# printf "\n\t Configuring snapper\n"
+# printf "\n"
+#
+# if ! snapper list-configs | grep -q '^root'; then
+#   snapper -c root create-config / 
+# fi
+# if ! snapper list-configs | grep -q '^home'; then
+#   snapper -c home create-config /home
+# fi
+#
+# printf "\n\t Snapper configuration complete\n"
 
 git config --global user.email "troytran000@gmail.com"
 git config --global user.name "Troy"
