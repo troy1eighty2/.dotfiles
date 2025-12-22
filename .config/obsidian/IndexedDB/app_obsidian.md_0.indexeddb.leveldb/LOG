@@ -1,3 +1,6 @@
-2025/12/18-05:19:29.105 4d2 Reusing MANIFEST /home/troy_chan55/.config/obsidian/IndexedDB/app_obsidian.md_0.indexeddb.leveldb/MANIFEST-000001
-2025/12/18-05:19:29.105 4d2 Recovering log #3
-2025/12/18-05:19:29.143 4d2 Reusing old log /home/troy_chan55/.config/obsidian/IndexedDB/app_obsidian.md_0.indexeddb.leveldb/000003.log 
+2025/12/22-00:51:02.683 6d9 Reusing MANIFEST /home/troy_chan55/.config/obsidian/IndexedDB/app_obsidian.md_0.indexeddb.leveldb/MANIFEST-000001
+2025/12/22-00:51:02.684 6d9 Recovering log #3
+2025/12/22-00:51:02.746 6d9 Reusing old log /home/troy_chan55/.config/obsidian/IndexedDB/app_obsidian.md_0.indexeddb.leveldb/000003.log 
+2025/12/22-21:39:21.501 74e Level-0 table #5: started
+2025/12/22-21:39:21.573 74e Level-0 table #5: 1366344 bytes OK
+2025/12/22-21:39:21.577 74e Delete type=0 #3

@@ -1,8 +1,7 @@
 #!/bin/bash
 set -euo pipefail
 
-# crontab -e
-# 0 6,18 * * * /home/$USER/.dotfiles/snapshot.sh
+# sudo vim /etc/anacrontab
 
 function checkConnection(){
   ping -c 1 google.com > /dev/null 2>&1
@@ -14,20 +13,26 @@ function checkConnection(){
   fi
 }
 
-function makeSnapshot(){
-  echo 'make snapshot'
+function makeAndSendSnapshot(){
+  home_snap=$(snapper -c home create -c number --print-number)
+  root_snap=$(snapper -c root create -c number --print-number)
+  echo $home_snap
+  echo $root_snap
+  snapper -c root send $root_snap | btrfs receive /mnt/ssd-backups/root
+  snapper -c home send $home_snap | btrfs receive /mnt/ssd-backups/home
+
+
   return 0
 }
 
 function main(){
-  while :; do
-    if checkConnection; then
-      makeSnapshot
-      break
-    fi
+  if checkConnection; then
+    makeAndSendSnapshot
+    return 0
+  else
     echo 'nothing detected'
-    sleep 120
-  done
+    return 1
+  fi
 }
 
 main

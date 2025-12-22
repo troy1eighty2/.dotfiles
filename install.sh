@@ -56,6 +56,7 @@ ttf-space-mono-nerd \
 hyprpaper \
 vi \
 brightnessctl \
+gtk3 \
 cronie
 
 printf "\n\t Package installation complete\n"
@@ -104,6 +105,7 @@ systemctl enable --now pcscd.service
 systemctl enable --now bluetooth.service
 systemctl enable --now keyd 
 systemctl enable --now cronie.service
+systemctl disable snapper-timeline.timer
 
 # printf "\n\t Systemd configuration complete\n"
 printf "\n\t Configuring fonts\n"
@@ -116,7 +118,8 @@ mkdir -p /usr/local/share/fonts/
 printf "\n\t Font configuration complete\n"
 printf "\n\t Configuring Mounts\n"
 
-mkdir -p /mnt/ssd-backups
+mkdir -p /mnt/ssd-backups/home
+mkdir -p /mnt/ssd-backups/root
 mkdir -p /pkg
 mkdir -p /log
 
@@ -126,9 +129,9 @@ if ! grep -q "UUID=$BOOT_DEVICE_ROOT_UUID.*subvol=@," /etc/fstab
 then
   echo "UUID=$BOOT_DEVICE_ROOT_UUID / btrfs subvol=@,defaults,nofail 0 1" >> /etc/fstab
 fi
-if ! grep -q "UUID=$BOOT_DEVICE_ROOT_UUID.*subvol=@.snapshots," /etc/fstab
+if ! grep -q "UUID=$BOOT_DEVICE_ROOT_UUID.*subvol=.snapshots," /etc/fstab
 then
-  echo "UUID=$BOOT_DEVICE_ROOT_UUID /.snapshots btrfs subvol=@.snapshots,defaults,nofail 0 2" >> /etc/fstab
+  echo "UUID=$BOOT_DEVICE_ROOT_UUID /.snapshots btrfs subvol=.snapshots,defaults,nofail 0 2" >> /etc/fstab
 fi
 if ! grep -q "UUID=$BOOT_DEVICE_ROOT_UUID.*subvol=@home," /etc/fstab
 then
@@ -168,17 +171,17 @@ EOF
 fi
 keyd reload
 printf "\n\t Remap configuration complete\n"
-# printf "\n\t Configuring snapper\n"
-# printf "\n"
-#
-# if ! snapper list-configs | grep -q '^root'; then
-#   snapper -c root create-config / 
-# fi
-# if ! snapper list-configs | grep -q '^home'; then
-#   snapper -c home create-config /home
-# fi
-#
-# printf "\n\t Snapper configuration complete\n"
+printf "\n\t Configuring snapper\n"
+printf "\n"
+
+if ! snapper list-configs | grep -q '^root'; then
+  snapper -c root create-config / 
+fi
+if ! snapper list-configs | grep -q '^home'; then
+  snapper -c home create-config /home
+fi
+
+printf "\n\t Snapper configuration complete\n"
 
 git config --global user.email "troytran000@gmail.com"
 git config --global user.name "Troy"
