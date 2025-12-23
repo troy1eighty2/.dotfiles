@@ -1,7 +1,7 @@
 .git
 .gitignore
 .stow-local-ignore
+anacron-scripts
 install.sh
+meta
 README.md
-STATEFILE
-SNAP_META
