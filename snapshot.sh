@@ -5,9 +5,11 @@
 
 STATES=(IDLE CHECK_CONNECTION MAKE_SNAPSHOT SEND_SNAPSHOT CLEAN_UP)
 STATEFILE_PATH='/home/troy_chan55/.dotfiles/STATEFILE'
+SNAP_META_PATH='/home/troy_chan55/.dotfiles/SNAP_META'
 
 function checkPrereq(){
-  echo "checking preq"
+  if [[ ! -d "/mnt/ssd-backups" ]]
+    return 1
 }
 function logicController(){
   state=$(cat $STATEFILE_PATH)
@@ -22,26 +24,30 @@ function logicController(){
   elif [[ $state = "CLEAN_UP" ]]; then
     cleanup
   else
-    echo 'IDLE' > $STATEFILE_PATH
+    echo 'IDLE' > "$STATEFILE_PATH"
     beginIdleLogic
   fi
 }
 function beginIdleLogic(){
   checkConnection
-  read root_snap home_snap <<< $(makeSnapshot)
-  sendSnapshot $root_snap $home_snap
+  makeSnapshot
+  sendSnapshot
   cleanup
 }
 function beginMakeSnapshotLogic(){
-  #delete make
-  echo "making snap"
+  checkConnection
+  cleanup
+  makeSnapshot
+  sendSnapshot
+  cleanup
 }
 function beginSendSnapshotLogic(){
-  #delete send
-  echo "sending snap"
+  checkConnection
+  cleanup
+  sendSnapshot
+  cleanup
 }
 function checkConnection(){
-  echo "checking con"
   echo 'CHECK_CONNECTION' > $STATEFILE_PATH
 
   while :; do
@@ -58,17 +64,25 @@ function makeSnapshot(){
   echo 'MAKE_SNAPSHOT' > $STATEFILE_PATH
   root_snap=$(snapper -c root create -c number --print-number)
   home_snap=$(snapper -c home create -c number --print-number)
-  echo "$root_snap $home_snap"
+  echo "$root_snap $home_snap" > $SNAP_META_PATH
 }
 
 function sendSnapshot(){
   echo 'SEND_SNAPSHOT' > $STATEFILE_PATH
+  read root_snap home_snap <<< "$(cat $SNAP_META_PATH)"
 
-  mkdir -p "/mnt/ssd-backups/root/$1"
-  mkdir -p "/mnt/ssd-backups/home/$2"
+  if [[ -d "/mnt/ssd-backups/root/$root_snap" ]] || [[ -d "/mnt/ssd-backups/home/$home_snap" ]];then
+    btrfs subvolume delete "/mnt/ssd-backups/root/$root_snap"
+    btrfs subvolume delete "/mnt/ssd-backups/home/$home_snap"
+    rm -rf  "/mnt/ssd-backups/root/$root_snap"
+    rm -rf  "/mnt/ssd-backups/home/$home_snap"
+  fi
 
-  btrfs send "/.snapshots/$1/snapshot" | btrfs receive "/mnt/ssd-backups/root/$1"
-  btrfs send "/home/.snapshots/$2/snapshot" | btrfs receive "/mnt/ssd-backups/home/$2"
+  mkdir -p "/mnt/ssd-backups/root/$root_snap"
+  mkdir -p "/mnt/ssd-backups/home/$home_snap"
+
+  btrfs send "/.snapshots/$root_snap/snapshot" | btrfs receive "/mnt/ssd-backups/root/$root_snap"
+  btrfs send "/home/.snapshots/$home_snap/snapshot" | btrfs receive "/mnt/ssd-backups/home/$home_snap"
 
   #send to remote
   # btrfs send "/.snapshots/$1/snapshot" | btrfs receive "/mnt/ssd-backups/root/$1"

@@ -3,3 +3,5 @@
 .stow-local-ignore
 install.sh
 README.md
+STATEFILE
+SNAP_META
