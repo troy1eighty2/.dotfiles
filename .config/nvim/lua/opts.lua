@@ -1,29 +1,14 @@
-vim.cmd.colorscheme("murphy")
-vim.g.netrw_liststyle = 3
-vim.opt.clipboard="unnamedplus"
+vim.opt.clipboard = 'unnamedplus'
+vim.opt.mouse = 'a'
 
-vim.opt.nu = true
-vim.opt.relativenumber = true
-vim.opt.cursorline = true
-vim.opt.cursorcolumn = true
+vim.opt.tabstop = 4                 -- number of visual spaces per TAB
+vim.opt.softtabstop = 4             -- number of spaces in tab when editing
+vim.opt.shiftwidth = 4              -- insert 4 spaces on a tab
+vim.opt.expandtab = true            -- tabs are spaces, mainly because of Python
 
+vim.opt.number = true               -- show absolute number
+vim.opt.relativenumber = true       -- add numbers to each line on the left side
+vim.opt.cursorline = true           -- highlight cursor line underneath the cursor horizontally
 
-vim.opt.tabstop = 2
-vim.opt.softtabstop = 2
-vim.opt.shiftwidth = 2
-vim.opt.expandtab = true
-vim.smartindent = true
-
-vim.opt.wrap = false
-
-vim.opt.incsearch = true
-
-vim.opt.swapfile = false
-vim.opt.backup = false
-vim.opt.undofile = true
-vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
-
-vim.opt.scrolloff = 10
-vim.opt.signcolumn = "yes"
-vim.opt.colorcolumn = "80"
--- vim.opt.updatetime = 50
+vim.opt.ignorecase = true           -- ignore case in searches by default
+vim.opt.smartcase = true            -- but make it case sensitive if an uppercase is entered

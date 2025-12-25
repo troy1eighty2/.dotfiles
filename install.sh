@@ -21,8 +21,13 @@ printf "\n"
 pacman -S --noconfirm --needed \
 nvim \
 git \
+npm \
+python-psutil \
 fastfetch \
 wofi \
+noto-fonts \
+noto-fonts-cjk \
+noto-fonts-emoji \
 cava \
 dunst \
 nwg-look \
@@ -31,6 +36,9 @@ firefox \
 waybar \
 obsidian \
 wine \
+python3 \
+psutil \
+bashtop \
 imagemagick \
 yubikey-manager \
 wl-clipboard \
@@ -54,6 +62,7 @@ snapper \
 otf-font-awesome \
 ttf-space-mono-nerd \
 hyprpaper \
+shellcheck \
 vi \
 brightnessctl \
 gtk3 \

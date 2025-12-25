@@ -4,12 +4,13 @@
 # sudo vim /etc/anacrontab
 
 STATES=(IDLE CHECK_CONNECTION MAKE_SNAPSHOT SEND_SNAPSHOT CLEAN_UP)
-STATEFILE_PATH='/home/troy_chan55/.dotfiles/meta/STATEFILE'
-SNAP_META_PATH='/home/troy_chan55/.dotfiles/meta/SNAP_META'
+STATEFILE_PATH='/var/lib/btrfs-backup-meta/STATEFILE'
+SNAP_META_PATH='/var/lib/btrfs-backup-meta/SNAP_META'
 
 function checkPrereq(){
-  if [[ ! -d "/mnt/ssd-backups" ]]
+  if [[ ! -d "/mnt/ssd-backups" ]]; then
     return 1
+  fi
 }
 function logicController(){
   state=$(cat $STATEFILE_PATH)
@@ -100,5 +101,4 @@ function main(){
   checkPrereq
   logicController
 }
-
 main
