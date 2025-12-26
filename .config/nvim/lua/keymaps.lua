@@ -29,8 +29,6 @@ vim.keymap.set("n", "<leader>2", function() require('harpoon'):list():select(2) 
 vim.keymap.set("n", "<leader>3", function() require('harpoon'):list():select(3) end)
 vim.keymap.set("n", "<leader>4", function() require('harpoon'):list():select(4) end)
 vim.keymap.set("n", "<leader>5", function() require('harpoon'):list():select(5) end)
--- vim.keymap.set("n", "<leader>n", function() require('harpoon'):list():next() end)
--- vim.keymap.set("n", "<leader>p", function() require('harpoon'):list():prev() end)
 
 vim.api.nvim_create_autocmd({'BufEnter'},{
     callback = function()

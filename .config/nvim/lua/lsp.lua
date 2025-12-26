@@ -4,11 +4,10 @@ vim.keymap.del("n", "gra")
 vim.keymap.del("n", "grr")
 vim.keymap.del("n", "gri")
 vim.keymap.del("n", "gO")
-
 -- Create keymapping
 -- LspAttach: After an LSP Client performs "initialize" and attaches to a buffer.
 vim.api.nvim_create_autocmd("LspAttach", {
-    callback = function (args)
+    callback = function(args)
         local keymap = vim.keymap
         local lsp = vim.lsp
         local bufopts = { noremap = true, silent = true }
@@ -17,12 +16,30 @@ vim.api.nvim_create_autocmd("LspAttach", {
         keymap.set("n", "gd", lsp.buf.definition, bufopts)
         keymap.set("n", "<space>rn", lsp.buf.rename, bufopts)
         keymap.set("n", "K", lsp.buf.hover, bufopts)
-        keymap.set("n", "<space>f", function()
-            vim.lsp.buf.format({ async = true })
-        end, bufopts)
+        -- keymap.set("n", "<space>f", function()
+        --     vim.lsp.buf.format({ async = true })
+        -- end, bufopts)
     end
 })
-vim.lsp.enable({ "lua_ls" })
-vim.lsp.enable({ "bashls" })
-vim.lsp.enable({ "eslint" })
-vim.lsp.enable({ "pylsp" })
+vim.lsp.config("lua_ls", {
+  capabilities = require('coq').lsp_ensure_capabilities(),
+})
+
+vim.lsp.config("bashls", {
+  capabilities = require('coq').lsp_ensure_capabilities(),
+})
+
+vim.lsp.config("eslint", {
+  capabilities = require('coq').lsp_ensure_capabilities(),
+})
+
+vim.lsp.config("pylsp", {
+  capabilities = require('coq').lsp_ensure_capabilities(),
+})
+
+vim.lsp.enable({
+  "lua_ls",
+  "bashls",
+  "eslint",
+  "pylsp",
+})
