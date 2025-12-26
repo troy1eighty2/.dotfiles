@@ -34,6 +34,7 @@ nwg-look \
 starship \
 firefox \
 waybar \
+fd \
 obsidian \
 wine \
 python3 \
@@ -66,6 +67,7 @@ shellcheck \
 vi \
 brightnessctl \
 gtk3 \
+chafa \
 cronie
 
 printf "\n\t Package installation complete\n"

@@ -1,9 +1,6 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
-require('opts')
-require('keymaps')
-require('lsp')
 
 
 -- Bootstrap lazy.nvim
@@ -35,3 +32,6 @@ require("lazy").setup({
     -- automatically check for plugin updates
     checker = { enabled = true },
 })
+require('opts')
+require('keymaps')
+require('lsp')

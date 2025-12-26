@@ -9,6 +9,12 @@ vim.opt.expandtab = true            -- tabs are spaces, mainly because of Python
 vim.opt.number = true               -- show absolute number
 vim.opt.relativenumber = true       -- add numbers to each line on the left side
 vim.opt.cursorline = true           -- highlight cursor line underneath the cursor horizontally
+vim.opt.cursorcolumn = true
+vim.opt.colorcolumn = "80"
+vim.cmd [[highlight ColorColumn ctermbg=green guibg=green]]
+
 
 vim.opt.ignorecase = true           -- ignore case in searches by default
 vim.opt.smartcase = true            -- but make it case sensitive if an uppercase is entered
+
+vim.opt.wrap = false

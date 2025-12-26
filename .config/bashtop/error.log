@@ -23,3 +23,8 @@ New instance of bashtop version: 0.9.25 Pid: 15035
 08:09:29 AM ERROR: On line 363 
 /usr/bin/bashtop: line 2424: ( ( 45-27 ) * 1000 * 1000 ) / ( cpu[hz]*time_elapsed*4 ) : division by 0 (error token is "( cpu[hz]*time_elapsed*4 ) ")
 /usr/bin/bashtop: line 2424: ( ( 63-27 ) * 1000 * 1000 ) / ( cpu[hz]*time_elapsed*4 ) : division by 0 (error token is "( cpu[hz]*time_elapsed*4 ) ")
+ 
+New instance of bashtop version: 0.9.25 Pid: 24534
+10:16:53 PM ERROR: On line 363 
+/usr/bin/bashtop: line 2424: ( ( 47-29 ) * 1000 * 1000 ) / ( cpu[hz]*time_elapsed*4 ) : division by 0 (error token is "( cpu[hz]*time_elapsed*4 ) ")
+/usr/bin/bashtop: line 2424: ( ( 62-29 ) * 1000 * 1000 ) / ( cpu[hz]*time_elapsed*4 ) : division by 0 (error token is "( cpu[hz]*time_elapsed*4 ) ")
