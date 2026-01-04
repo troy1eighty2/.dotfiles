@@ -42,4 +42,5 @@ vim.lsp.enable({
   "bashls",
   "eslint",
   "pylsp",
+  "clangd",
 })

@@ -31,6 +31,8 @@ noto-fonts-emoji \
 cava \
 dunst \
 nwg-look \
+gcc \
+less \
 starship \
 firefox \
 waybar \
@@ -65,6 +67,7 @@ ttf-space-mono-nerd \
 hyprpaper \
 shellcheck \
 vi \
+vlc \
 brightnessctl \
 gtk3 \
 chafa \
