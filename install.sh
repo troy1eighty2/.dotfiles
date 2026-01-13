@@ -34,6 +34,7 @@ nwg-look \
 gcc \
 less \
 starship \
+libreoffice-still \
 firefox \
 waybar \
 fd \
@@ -71,6 +72,7 @@ vlc \
 brightnessctl \
 gtk3 \
 chafa \
+man \
 cronie
 
 printf "\n\t Package installation complete\n"

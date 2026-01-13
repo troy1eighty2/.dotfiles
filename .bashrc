@@ -4,6 +4,7 @@
 
 export PATH="$HOME/.local/bin:$PATH"
 export CLASS_ATTACHMENTS="$HOME/MyStuff/daily/Class/class-attachments"
+export HYPRSHOT_DIR="$HOME/Wallpapers"
 HOMEPATH='/home/troy_chan55'
 MYSTUFF="$HOMEPATH/MyStuff"
 CURR_PROJ='fatima'

@@ -1,3 +1,3 @@
 # .dotfiles
 
-- wofi is fucked
+email: troytran000@gmail.com
