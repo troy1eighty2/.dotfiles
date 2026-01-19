@@ -31,8 +31,10 @@ noto-fonts-emoji \
 cava \
 dunst \
 nwg-look \
+rsync \
 gcc \
 less \
+nfs-utils \
 starship \
 libreoffice-still \
 firefox \
@@ -139,7 +141,10 @@ mkdir -p /mnt/ssd-backups/root
 mkdir -p /pkg
 mkdir -p /log
 
-
+mkdir -p /mnt/rhel_shared
+mkdir -p /mnt/rhel_troytran-shared
+echo "192.168.1.50:/mnt/shared /mnt/rhel_shared nfs defaults 0 0" >> /etc/fstab
+echo "192.168.1.50:/mnt/troytran-shared /mnt/rhel_troytran-shared nfs defaults 0 0" >> /etc/fstab
 
 if ! grep -q "UUID=$BOOT_DEVICE_ROOT_UUID.*subvol=@," /etc/fstab
 then

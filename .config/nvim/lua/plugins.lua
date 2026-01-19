@@ -1,10 +1,14 @@
 return {
-    {
-        'numToStr/Comment.nvim',
-        opts = {
-            -- add any options here
-        }
-    },
+    -- {
+    --     'numToStr/Comment.nvim',
+    --     config = function ()
+    --         local ft = require('Comment.ft')
+    --
+    --         ft.set('typescript', { '//%s', '/*%s*/' })
+    --         ft.set('typescriptreact', { '//%s', '/*%s*/' })
+    --
+    --     end
+    -- },
     {
         "mason-org/mason.nvim",
         opts = {}
@@ -72,8 +76,11 @@ return {
         },
     },
     {
-        'nvim-treesitter/nvim-treesitter',
+        "nvim-treesitter/nvim-treesitter",
+        lazy = false,
+        build = ":TSUpdate",
     },
+
     { "nvim-tree/nvim-web-devicons", opts = {} },
     {
         'nvim-telescope/telescope.nvim', tag = 'v0.2.0',
@@ -211,15 +218,28 @@ return {
         },
     },
     {
-        "kawre/leetcode.nvim",
-        build = ":TSUpdate html", -- if you have `nvim-treesitter` installed
-        dependencies = {
-            -- include a picker of your choice, see picker section for more details
-            "nvim-lua/plenary.nvim",
-            "MunifTanjim/nui.nvim",
-        },
-        opts = {
-            -- configuration goes here
-        },
+        "folke/ts-comments.nvim",
+        opts = {},
+        event = "VeryLazy",
+        enabled = vim.fn.has("nvim-0.10.0") == 1,
+    },
+    {
+        'stevearc/conform.nvim',
+        config = function()
+            require("conform").setup({
+                formatters_by_ft = {
+                    lua = { "stylua" },
+                    -- Conform will run multiple formatters sequentially
+                    python = { "isort", "black" },
+                    -- You can customize some of the format options for the filetype (:help conform.format)
+                    rust = { "rustfmt", lsp_format = "fallback" },
+                    -- Conform will run the first available formatter
+                    javascript = { "prettier", stop_after_first = true },
+                    javascriptreact = {  "prettier", stop_after_first = true },
+                    typescript = {  "prettier", stop_after_first = true },
+                    typescriptreact = { "prettier", stop_after_first = true },
+                },
+            })
+        end
     }
 }

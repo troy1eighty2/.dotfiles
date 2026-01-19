@@ -1,6 +1,13 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
-
+vim.g.typescript_indent_disable = 1
+vim.g.typescriptreact_indent_disable = 1
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = { "typescriptreact", "typescript" },
+  callback = function()
+    vim.bo.indentexpr = "nvim_treesitter#indent()"
+  end,
+})
 
 
 -- Bootstrap lazy.nvim
@@ -32,6 +39,6 @@ require("lazy").setup({
     -- automatically check for plugin updates
     checker = { enabled = true },
 })
-require('opts')
 require('keymaps')
 require('lsp')
+require('opts')

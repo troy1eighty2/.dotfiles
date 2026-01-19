@@ -30,6 +30,10 @@ vim.keymap.set("n", "<leader>3", function() require('harpoon'):list():select(3) 
 vim.keymap.set("n", "<leader>4", function() require('harpoon'):list():select(4) end)
 vim.keymap.set("n", "<leader>5", function() require('harpoon'):list():select(5) end)
 
+vim.keymap.set("n", "<leader>f", function()
+  require("conform").format({ async = true })
+end)
+
 vim.api.nvim_create_autocmd({'BufEnter'},{
     callback = function()
         vim.api.nvim_command("Screenkey")

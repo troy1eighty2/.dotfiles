@@ -36,6 +36,15 @@ vim.lsp.config("eslint", {
 vim.lsp.config("pylsp", {
   capabilities = require('coq').lsp_ensure_capabilities(),
 })
+vim.lsp.config("clangd", {
+  capabilities = require('coq').lsp_ensure_capabilities(),
+})
+vim.lsp.config("cssls", {
+  capabilities = require('coq').lsp_ensure_capabilities(),
+})
+vim.lsp.config("ts_ls", {
+  capabilities = require('coq').lsp_ensure_capabilities(),
+})
 
 vim.lsp.enable({
   "lua_ls",
@@ -43,4 +52,6 @@ vim.lsp.enable({
   "eslint",
   "pylsp",
   "clangd",
+  "cssls",
+  "ts_ls",
 })
