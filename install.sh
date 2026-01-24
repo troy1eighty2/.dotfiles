@@ -33,13 +33,17 @@ dunst \
 nwg-look \
 rsync \
 gcc \
+cmake \
+ufw \
 less \
+reflector \
 nfs-utils \
 starship \
 libreoffice-still \
 firefox \
 waybar \
 fd \
+python-lsp-server \
 obsidian \
 wine \
 python3 \

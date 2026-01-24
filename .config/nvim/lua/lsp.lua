@@ -45,9 +45,12 @@ vim.lsp.config("cssls", {
 vim.lsp.config("ts_ls", {
   capabilities = require('coq').lsp_ensure_capabilities(),
 })
-
+vim.lsp.config("pyright", {
+  capabilities = require('coq').lsp_ensure_capabilities(),
+})
 vim.lsp.enable({
   "lua_ls",
+  "pyright",
   "bashls",
   "eslint",
   "pylsp",

@@ -7,7 +7,7 @@ export CLASS_ATTACHMENTS="$HOME/MyStuff/daily/Class/class-attachments"
 export HYPRSHOT_DIR="$HOME/Wallpapers"
 HOMEPATH='/home/troy_chan55'
 MYSTUFF="$HOMEPATH/MyStuff"
-CURR_PROJ='fatima'
+CURR_PROJ='two-target-resolution'
 
 alias ls='ls --color=auto'
 alias ll='ls -la --color=auto'
@@ -20,7 +20,7 @@ alias shutdown="shutdown now"
 alias editbash="vim $HOMEPATH/.bashrc"
 alias editinstall="vim $HOMEPATH/.dotfiles/install.sh"
 alias sobash="source $HOMEPATH/.bashrc"
-alias soenv="source $MYSTUFF/venv/bin/activate" 
+alias soenv="source $MYSTUFF/$CURR_PROJ/venv/bin/activate" 
 alias edots="vim $HOMEPATH/.dotfiles"
 # alias ts="ssh -i $HOMEPATH/.ssh/rhel_server.pem ec2-user@ec2-3-16-135-160.us-east-2.compute.amazonaws.com"
 alias tts="kitty +kitten ssh troy_chan55@100.122.153.97"
