@@ -30,7 +30,7 @@ alias s="hyprshot -m region"
 alias 6200container='sudo docker run -it -v "$HOME/MyStuff/6200-shared:/home/user" gtomscs6200/sum24-environment'
 alias macsequoia='quickemu --vm $HOME/macos-sonoma.conf'
 alias sharedmusic="cd /mnt/nfs_shared/Media/Music"
-alias spotiFLAC="wine /builds/SpotiFLAC.AppImage"
+alias spotiFLAC="exec /builds/SpotiFLAC.AppImage"
 alias mvproj='rsync -aP --delete "$MYSTUFF/$CURR_PROJ" troy_chan55@100.122.153.97:~/MyStuff/'
 
 alias yubikey="$HOMEPATH/builds/yubico-authenticator-7.2.3-linux/authenticator"

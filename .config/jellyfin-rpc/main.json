@@ -8,10 +8,7 @@
 		"application_id": "1442964163256258662"
 	},
 	"images": {
-		"enable_images": true,
-		"imgur_images": false,
-		"litterbox_images": true,
-		"process_images": false
+		"enable_images": true
 	}
 }
 
