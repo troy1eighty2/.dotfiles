@@ -1,5 +1,7 @@
 [Added Associations]
+application/pdf=firefox-2.desktop;
 application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice.desktop;
 
 [Default Applications]
+application/pdf=firefox-2.desktop;
 application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice.desktop;

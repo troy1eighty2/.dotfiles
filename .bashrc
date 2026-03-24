@@ -3,7 +3,7 @@
 [[ $- != *i* ]] && return
 
 export PATH="$HOME/.local/bin:$PATH"
-export CLASS_ATTACHMENTS="$HOME/MyStuff/daily/Class/class-attachments"
+export CLASS_ATTACHMENTS="$HOME/MyStuff/troy-obsidian-vault/Class/class-attachments"
 export HYPRSHOT_DIR="$HOME/Wallpapers"
 HOMEPATH='/home/troy_chan55'
 MYSTUFF="$HOMEPATH/MyStuff"
@@ -26,7 +26,8 @@ alias edots="vim $HOMEPATH/.dotfiles"
 alias tts="kitty +kitten ssh troy_chan55@100.122.153.97"
 alias q='cd ~/MyStuff/$CURR_PROJ'
 alias v="nvim"
-alias s="hyprshot -m region"
+alias s="hyprshot -o $CLASS_ATTACHMENTS -m region"
+alias ss="hyprshot -m region"
 alias 6200container='sudo docker run -it -v "$HOME/MyStuff/6200-shared:/home/user" gtomscs6200/sum24-environment'
 alias macsequoia='quickemu --vm $HOME/macos-sonoma.conf'
 alias sharedmusic="cd /mnt/nfs_shared/Media/Music"
@@ -37,6 +38,7 @@ alias yubikey="$HOMEPATH/builds/yubico-authenticator-7.2.3-linux/authenticator"
 
 alias r90="hyprctl keyword monitor eDP-1,preferred,auto,1,transform,1"
 alias r0="hyprctl keyword monitor eDP-1,preferred,auto,1,transform,0"
+alias r180="hyprctl keyword monitor eDP-1,preferred,auto,0,transform,3"
 
 PS1='[\u@\h \W]\$ '
 

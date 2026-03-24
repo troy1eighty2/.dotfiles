@@ -79,6 +79,15 @@ brightnessctl \
 gtk3 \
 chafa \
 man \
+python-dateutil \
+python-discid \
+python-fasteners \
+python-markdown \
+python-mutagen \
+python-pyjwt \
+python-pyqt5 \
+python-yaml \
+python-pyqt6 \
 cronie
 
 printf "\n\t Package installation complete\n"
@@ -106,6 +115,7 @@ pacman -S flatpak --noconfirm --needed
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 flatpak install -y flathub com.discordapp.Discord
 flatpak install -y flathub com.spotify.Client
+flatpak install -y flathub org.musicbrainz.Picard
 
 printf "\n\t Flatpak installation complete\n"
 # printf "\n\t Installing builds\n"
