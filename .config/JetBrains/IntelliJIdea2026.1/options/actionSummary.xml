@@ -1,0 +1,70 @@
+<application>
+  <component name="ActionsLocalSummary">
+    <e n="$SelectAll">
+      <i c="1" l="1777149297617" />
+    </e>
+    <e n="DatabaseView.AddActionGroupPopup">
+      <i c="1" l="1777149250899" />
+    </e>
+    <e n="DatabaseView.DeactivateAction">
+      <i c="1" l="1777152056282" />
+    </e>
+    <e n="DatabaseView.DropAction">
+      <i c="1" l="1777152080534" />
+    </e>
+    <e n="DatabaseView.PropertiesAction">
+      <i c="6" l="1777152221799" />
+    </e>
+    <e n="DatabaseView.Refresh">
+      <i c="2" l="1777152205623" />
+    </e>
+    <e n="EditorBackSpace">
+      <i c="2" l="1777149296698" />
+    </e>
+    <e n="EditorCopy">
+      <i c="1" l="1777149298129" />
+    </e>
+    <e n="EditorPaste">
+      <i c="1" l="1777149299254" />
+    </e>
+    <e n="Register">
+      <i c="1" l="1777149096469" />
+    </e>
+    <e n="WelcomeScreen.CreateNewProject">
+      <i c="1" l="1777149096439" />
+    </e>
+    <e n="WelcomeScreen.OpenProject">
+      <i c="2" l="1777149106590" />
+    </e>
+    <e n="com.intellij.database.dataSource.DataSourceScopeEditor$RefreshAction">
+      <i c="1" l="1777152198480" />
+    </e>
+    <e n="com.intellij.database.dataSource.LocalDataSourceManager$3">
+      <i c="1" l="1777149265451" />
+    </e>
+    <e n="com.intellij.notification.NotificationAction$Simple">
+      <i c="1" l="1777152024549" />
+    </e>
+    <e n="com.intellij.openapi.fileEditor.impl.tabActions.CloseTab">
+      <i c="4" l="1777152104015" />
+    </e>
+    <e n="com.intellij.openapi.project.DumbAwareAction$SimpleDumbAwareAction">
+      <i c="1" l="1777149403039" />
+    </e>
+    <e n="com.intellij.openapi.ui.DialogWrapper$5">
+      <i c="1" l="1777150504092" />
+    </e>
+    <e n="com.intellij.openapi.wm.impl.SquareAnActionButton">
+      <i c="3" l="1777152045923" />
+    </e>
+    <e n="com.intellij.openapi.wm.impl.welcomeScreen.WelcomeScreenComponentFactory$4">
+      <i c="1" l="1777149089652" />
+    </e>
+    <e n="com.intellij.toolWindow.ToolWindowHeader$HideAction">
+      <i c="1" l="1777152016581" />
+    </e>
+    <e n="com.intellij.toolWindow.ToolWindowHeader$ShowOptionsAction">
+      <i c="1" l="1777149200253" />
+    </e>
+  </component>
+</application>

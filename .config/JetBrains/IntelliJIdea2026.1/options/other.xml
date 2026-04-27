@@ -1,0 +1,82 @@
+<application>
+  <component name="FileEditorProviderManager">{}</component>
+  <component name="LangManager">
+    <option name="languageName" value="JAVA" />
+  </component>
+  <component name="NotRoamableUiSettings">
+    <option name="fontSize" value="15.0" />
+    <option name="presentationModeIdeScale" value="1.75" />
+  </component>
+  <component name="PropertyService"><![CDATA[{
+  "keyToString": {
+    "LAST_CALCULATED_COLOR_INDEX_KEY": "6",
+    "RunOnceActivity.AIPromoWindowAdvisorPreheat": "true",
+    "RunOnceActivity.TerminalFontSettingsService.fixStoredNonMonospacedFonts": "true",
+    "RunOnceActivity.TerminalOptionsProvider.TerminalEngineMigration.2026.1": "true",
+    "RunOnceActivity.TerminalOptionsProvider.appTitleMigration.2026.1.1": "true",
+    "RunOnceActivity.VFSInitializationConditionsToFusReporter": "true",
+    "RunOnceActivity.gateway.wsl.native.mode.default.set": "true",
+    "RunOnceActivity.git.modal.commit.toggle": "true",
+    "RunOnceActivity.llm.claude.code.byok.migration": "true",
+    "RunOnceActivity.llm.onboarding.window.launcher.v7": "true",
+    "RunOnceActivity.reset.auto.reparse.settings.to.default": "true",
+    "RunOnceActivity.set.default.devcontainer.project.open.action": "true",
+    "ai.assistant.toolwindow.was.shown": "true",
+    "ask.about.ctrl.y.shortcut.v2": "true",
+    "build.toolwindow.Sync.selection.state": "com.intellij.build.BuildTreeConsoleView",
+    "com.intellij.ide.projectWizard.generators.JavaNewProjectWizard$Step.selectedStep": "IntelliJ",
+    "database.notebook.setting.id": "85743737-5899-48c0-897c-cda40ba1fb1e",
+    "evlsprt3.261": "7",
+    "experimental.ui.first.switch": "true",
+    "experimental.ui.on.first.startup": "true",
+    "experimental.ui.used.version": "261.23567.138",
+    "fileTypeChangedCounter": "43",
+    "fontSizeToResetConsole": "13.0",
+    "fontSizeToResetEditor": "13.0",
+    "git.working.trees.number.of.projects.with.git": "2",
+    "got.it.tooltip.database.cloud.explorer.promo": "1",
+    "got.it.tooltip.database.schema.control.got.it": "1",
+    "ide.islands.ab3": "true",
+    "ide.islands.new.darcula": "true",
+    "ift.hide.welcome.screen.promo": "true",
+    "installed.kotlin.plugin.version": "261.23567.138-IJ",
+    "last_opened_file_path": "/home/troy_chan55/MyStuff/Assignment3",
+    "llm.installer.auto.activation.executed": "true",
+    "llm.installer.last.toolwindow.state": "AI_ASSISTANT",
+    "migrated.non.roamable.values.from.general.settings": "true",
+    "previousColorScheme": "_@user_Islands Dark",
+    "project.wizard.group": "NPW.simple-project.Java",
+    "registry.to.advanced.settings.migration.build": "IU-261.23567.138",
+    "trial.state.free.trial.expiration.date": "1779685200000",
+    "trial.state.last.availability.check": "1777148993612",
+    "trial.state.last.availability.state": "true",
+    "trial.state.last.state": "ACTIVE",
+    "ts.lib.d.ts.version": "5.9.3"
+  },
+  "keyToStringList": {
+    "file.chooser.recent.files": [
+      "/home/troy_chan55/MyStuff/Assignment3"
+    ],
+    "fileTypeDetectors": [
+      "com.intellij.ide.scratch.ScratchFileServiceImpl$Detector",
+      "com.intellij.database.vfs.DbStorageFileType$Detector",
+      "com.intellij.profiler.ultimate.hprof.impl.HprofFileTypeDetector",
+      "com.intellij.javascript.debugger.sourcemap.SourceMapFileType$MyFileTypeDetector",
+      "com.jetbrains.nodejs.util.NodeFileTypeDetector$JavaScriptFileTypeDetector",
+      "com.jetbrains.nodejs.util.NodeFileTypeDetector$TypeScriptFileTypeDetector",
+      "com.intellij.docker.dockerFile.DockerFileTypeDetector",
+      "org.jetbrains.plugins.textmate.TextMateFileType$TextMateFileDetector"
+    ],
+    "trial.active.editor.tab.shown.versions": [
+      "IU-2026.1"
+    ]
+  }
+}]]></component>
+  <component name="ReworkedTerminalUsage">{
+  &quot;firstIdeSessionMoment&quot;: {
+    &quot;type&quot;: &quot;org.jetbrains.plugins.terminal.TerminalFirstIdeSessionMoment.Version&quot;,
+    &quot;build&quot;: &quot;IU-261.23567.138&quot;
+  }
+}</component>
+  <component name="TerminalAgentsState">{}</component>
+</application>

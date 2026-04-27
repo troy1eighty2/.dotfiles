@@ -1,6 +1,7 @@
 // -*- mode: jsonc -*-
 {
     "layer": "top", // Waybar at top layer
+    "output":"eDP-1",
     "position": "bottom", // Waybar position (top|bottom|left|right)
     //"height": 0, // Waybar height (to be removed for auto height)
     "width": 1888, // Waybar width

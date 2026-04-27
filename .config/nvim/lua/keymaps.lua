@@ -34,8 +34,10 @@ vim.keymap.set("n", "<leader>f", function()
   require("conform").format({ async = true })
 end)
 
-vim.api.nvim_create_autocmd({'BufEnter'},{
-    callback = function()
+vim.api.nvim_create_autocmd("BufEnter", {
+  callback = function()
+    vim.schedule(function()
         vim.api.nvim_command("Screenkey")
-    end
+    end)
+  end,
 })

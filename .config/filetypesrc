@@ -1,3 +1,4 @@
 [EmbedSettings]
 embed-application/pdf=false
 embed-application/vnd.openxmlformats-officedocument.wordprocessingml.document=false
+embed-video/mp4=false

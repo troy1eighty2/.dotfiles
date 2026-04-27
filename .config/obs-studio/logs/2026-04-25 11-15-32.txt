@@ -1,0 +1,1582 @@
+11:15:32.119: Platform: Wayland
+11:15:32.119: CPU Name: Intel(R) Core(TM) i5-8350U CPU @ 1.70GHz
+11:15:32.119: CPU Speed: 3102.617MHz
+11:15:32.119: Physical Cores: 4, Logical Cores: 4
+11:15:32.119: Physical Memory: 48084MB Total, 22689MB Free
+11:15:32.119: Kernel Version: Linux 6.19.12-arch1-1
+11:15:32.119: Distribution: "Arch Linux" Unknown
+11:15:32.119: Desktop Environment: Hyprland
+11:15:32.119: Session Type: wayland
+11:15:32.121: Current Date/Time: 2026-04-25, 11:15:32 AM
+11:15:32.121: Browser Hardware Acceleration: true
+11:15:32.121: Qt Version: 6.11.0 (runtime), 6.11.0 (compiled)
+11:15:32.121: Portable mode: false
+11:15:32.171: OBS 32.1.1 (linux)
+11:15:32.171: ---------------------------------
+11:15:32.172: ---------------------------------
+11:15:32.172: audio settings reset:
+11:15:32.172: 	samples per sec: 48000
+11:15:32.172: 	speakers:        2
+11:15:32.172: 	max buffering:   960 milliseconds
+11:15:32.172: 	buffering type:  dynamically increasing
+11:15:32.174: ---------------------------------
+11:15:32.174: Initializing OpenGL...
+11:15:32.174: Using EGL/Wayland
+11:15:32.227: Initialized EGL 1.5
+11:15:32.244: Loading up OpenGL on adapter Intel Mesa Intel(R) UHD Graphics 620 (KBL GT2)
+11:15:32.244: OpenGL loaded successfully, version 4.6 (Core Profile) Mesa 26.0.4-arch1.1, shading language 4.60
+11:15:32.279: ---------------------------------
+11:15:32.279: video settings reset:
+11:15:32.279: 	base resolution:   1920x1080
+11:15:32.279: 	output resolution: 1280x720
+11:15:32.279: 	downscale filter:  Bicubic
+11:15:32.279: 	fps:               30/1
+11:15:32.279: 	format:            NV12
+11:15:32.279: 	YUV mode:          Rec. 709/Partial
+11:15:32.279: NV12 texture support enabled
+11:15:32.279: P010 texture support not available
+11:15:32.282: Audio monitoring device:
+11:15:32.282: 	name: Default
+11:15:32.282: 	id: default
+11:15:32.284: ---------------------------------
+11:15:32.285: Failed to load 'en-US' text for module: 'decklink-captions.so'
+11:15:32.286: Failed to load 'en-US' text for module: 'decklink-output-ui.so'
+11:15:32.287: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+11:15:32.287: Failed to initialize module 'decklink.so'
+11:15:32.422: [pipewire] Available capture sources:
+11:15:32.423: [pipewire]     - Monitor source
+11:15:32.423: [pipewire]     - Window source
+11:15:32.430: v4l2loopback not installed, virtual camera not registered
+11:15:32.448: VAAPI: Failed to initialize display in vaapi_device_h264_supported
+11:15:32.448: FFmpeg VAAPI H264 encoding not supported
+11:15:32.448: VAAPI: Failed to initialize display in vaapi_device_av1_supported
+11:15:32.448: FFmpeg VAAPI AV1 encoding not supported
+11:15:32.448: VAAPI: Failed to initialize display in vaapi_device_hevc_supported
+11:15:32.448: FFmpeg VAAPI HEVC encoding not supported
+11:15:32.453: os_dlopen(libnvidia-encode.so.1->libnvidia-encode.so.1): libnvidia-encode.so.1: cannot open shared object file: No such file or directory
+11:15:32.453: 
+11:15:32.453: NVENC not supported
+11:15:32.453: Failed to initialize module 'obs-nvenc.so'
+11:15:32.475: [obs-websocket] [obs_module_load] you can haz websockets (Version: 5.7.3 | RPC Version: 1)
+11:15:32.475: [obs-websocket] [obs_module_load] Qt version (compile-time): 6.11.0 | Qt version (run-time): 6.11.0
+11:15:32.475: [obs-websocket] [obs_module_load] Linked ASIO Version: 103800
+11:15:32.480: [obs-websocket] [obs_module_load] Module loaded.
+11:15:32.483: ---------------------------------
+11:15:32.484:   Loaded Modules:
+11:15:32.484:     text-freetype2.so
+11:15:32.484:     rtmp-services.so
+11:15:32.484:     obs-x264.so
+11:15:32.484:     obs-websocket.so
+11:15:32.484:     obs-webrtc.so
+11:15:32.484:     obs-vst.so
+11:15:32.484:     obs-transitions.so
+11:15:32.484:     obs-qsv11.so
+11:15:32.484:     obs-outputs.so
+11:15:32.484:     obs-libfdk.so
+11:15:32.484:     obs-filters.so
+11:15:32.484:     obs-ffmpeg.so
+11:15:32.484:     linux-v4l2.so
+11:15:32.484:     linux-pulseaudio.so
+11:15:32.484:     linux-pipewire.so
+11:15:32.484:     linux-jack.so
+11:15:32.484:     linux-capture.so
+11:15:32.484:     linux-alsa.so
+11:15:32.484:     image-source.so
+11:15:32.484:     frontend-tools.so
+11:15:32.484:     decklink-output-ui.so
+11:15:32.484:     decklink-captions.so
+11:15:32.484: ---------------------------------
+11:15:32.484: ---------------------------------
+11:15:32.484: Available Encoders:
+11:15:32.484:   Video Encoders:
+11:15:32.484: 	- ffmpeg_svt_av1 (SVT-AV1)
+11:15:32.484: 	- ffmpeg_aom_av1 (AOM AV1)
+11:15:32.484: 	- obs_x264 (x264)
+11:15:32.484:   Audio Encoders:
+11:15:32.484: 	- ffmpeg_aac (FFmpeg AAC)
+11:15:32.484: 	- ffmpeg_opus (FFmpeg Opus)
+11:15:32.484: 	- ffmpeg_pcm_s16le (FFmpeg PCM (16-bit))
+11:15:32.484: 	- ffmpeg_pcm_s24le (FFmpeg PCM (24-bit))
+11:15:32.484: 	- ffmpeg_pcm_f32le (FFmpeg PCM (32-bit float))
+11:15:32.484: 	- ffmpeg_alac (FFmpeg ALAC (24-bit))
+11:15:32.484: 	- ffmpeg_flac (FFmpeg FLAC (16-bit))
+11:15:32.484: 	- libfdk_aac (libfdk AAC)
+11:15:32.484: ==== Startup complete ===============================================
+11:15:32.537: All scene data cleared
+11:15:32.537: ------------------------------------------------
+11:15:32.542: Device for 'Audio Output Capture' source Desktop Audio is also used for audio monitoring.
+11:15:32.542: Deduplication logic is being applied to all monitored sources.
+11:15:32.543: pulse-input: Server name: 'PulseAudio (on PipeWire 1.6.3) 15.0.0'
+11:15:32.543: pulse-input: Audio format: s16le, 48000 Hz, 2 channels
+11:15:32.543: pulse-input: Started recording from 'alsa_output.usb-HP__Inc_HyperX_Cloud_Stinger_2_Wireless_0-00.analog-stereo.monitor' (default)
+11:15:32.543: [Loaded global audio device]: 'Desktop Audio'
+11:15:32.543: pulse-input: Server name: 'PulseAudio (on PipeWire 1.6.3) 15.0.0'
+11:15:32.544: pulse-input: Audio format: s16le, 48000 Hz, 1 channels
+11:15:32.544: pulse-input: Started recording from 'alsa_input.usb-HP__Inc_HyperX_Cloud_Stinger_2_Wireless_0-00.mono-fallback' (default)
+11:15:32.544: [Loaded global audio device]: 'Mic/Aux'
+11:15:32.544:     - filter: 'Noise Suppression' (noise_suppress_filter_v2)
+11:15:32.544: PipeWire initialized
+11:15:32.545: PipeWire initialized
+11:15:32.546: Switched to scene 'side'
+11:15:32.546: ------------------------------------------------
+11:15:32.546: Loaded scenes:
+11:15:32.546: - scene 'main':
+11:15:32.546:     - source: 'Screen Capture (PipeWire)' (pipewire-screen-capture-source)
+11:15:32.546: - scene 'side':
+11:15:32.546:     - source: 'Screen Capture (PipeWire) 2' (pipewire-screen-capture-source)
+11:15:32.546: ------------------------------------------------
+11:15:32.563: Device for 'Audio Output Capture' source Desktop Audio is also used for audio monitoring.
+11:15:32.563: Deduplication logic is being applied to all monitored sources.
+11:15:32.612: [pipewire] Screencast session created
+11:15:32.612: [pipewire] Screencast session created
+11:15:33.111: adding 21 milliseconds of audio buffering, total audio buffering is now 21 milliseconds (source: Desktop Audio)
+11:15:33.111: 
+11:15:33.175: adding 42 milliseconds of audio buffering, total audio buffering is now 64 milliseconds (source: Mic/Aux)
+11:15:33.175: 
+11:15:35.021: [pipewire] Asking for monitor and window
+11:15:35.938: [pipewire] Asking for monitor and window
+11:15:35.940: [pipewire] source selected, setting up screencast
+11:15:35.946: [pipewire] source selected, setting up screencast
+11:15:35.958: [pipewire] Server version: 1.6.3
+11:15:35.958: [pipewire] Library version: 1.6.3
+11:15:35.958: [pipewire] Header version: 1.6.2
+11:15:35.958: [pipewire] Created stream 0x55d0729a16a0
+11:15:35.958: [pipewire] Stream 0x55d0729a16a0 state: "connecting" (error: none)
+11:15:35.959: [pipewire] Playing stream 0x55d0729a16a0
+11:15:35.963: [pipewire] Stream 0x55d0729a16a0 state: "paused" (error: none)
+11:15:35.965: [pipewire] Server version: 1.6.3
+11:15:35.965: [pipewire] Library version: 1.6.3
+11:15:35.965: [pipewire] Header version: 1.6.2
+11:15:35.965: [pipewire] Created stream 0x55d0729d88e0
+11:15:35.965: [pipewire] Stream 0x55d0729d88e0 state: "connecting" (error: none)
+11:15:35.965: [pipewire] Playing stream 0x55d0729d88e0
+11:15:35.966: [pipewire] Stream 0x55d0729d88e0 state: "paused" (error: none)
+11:15:35.980: [pipewire] Negotiated format:
+11:15:35.980: [pipewire]     Format: 12 (Spa:Enum:VideoFormat:BGRA)
+11:15:35.980: [pipewire]     Modifier: 0x0
+11:15:35.980: [pipewire]     Size: 2560x1440
+11:15:35.980: [pipewire]     Framerate: 0/1
+11:15:35.983: [pipewire] Negotiated format:
+11:15:35.983: [pipewire]     Format: 12 (Spa:Enum:VideoFormat:BGRA)
+11:15:35.983: [pipewire]     Modifier: 0x100000000000004
+11:15:35.983: [pipewire]     Size: 2560x1440
+11:15:35.983: [pipewire]     Framerate: 0/1
+11:15:35.993: [pipewire] Negotiated format:
+11:15:35.993: [pipewire]     Format: 12 (Spa:Enum:VideoFormat:BGRA)
+11:15:35.993: [pipewire]     Modifier: 0x0
+11:15:35.993: [pipewire]     Size: 1920x1080
+11:15:35.993: [pipewire]     Framerate: 0/1
+11:15:35.994: [pipewire] Stream 0x55d0729a16a0 state: "streaming" (error: none)
+11:15:35.995: [pipewire] Negotiated format:
+11:15:35.995: [pipewire]     Format: 12 (Spa:Enum:VideoFormat:BGRA)
+11:15:35.995: [pipewire]     Modifier: 0x100000000000004
+11:15:35.995: [pipewire]     Size: 1920x1080
+11:15:35.995: [pipewire]     Framerate: 0/1
+11:15:36.003: [pipewire] Stream 0x55d0729d88e0 state: "streaming" (error: none)
+11:15:36.006: Cannot create EGLImage: Arguments are inconsistent (for example, a valid context requires buffers not supplied by a valid surface).
+11:15:36.006: [pipewire] Renegotiating stream
+11:15:36.007: [pipewire] Stream 0x55d0729a16a0 state: "paused" (error: none)
+11:15:36.007: [pipewire] Negotiated format:
+11:15:36.007: [pipewire]     Format: 12 (Spa:Enum:VideoFormat:BGRA)
+11:15:36.007: [pipewire]     Modifier: 0x100000000000004
+11:15:36.007: [pipewire]     Size: 2560x1440
+11:15:36.007: [pipewire]     Framerate: 0/1
+11:15:36.012: [pipewire] Negotiated format:
+11:15:36.012: [pipewire]     Format: 12 (Spa:Enum:VideoFormat:BGRA)
+11:15:36.012: [pipewire]     Modifier: 0x100000000000002
+11:15:36.012: [pipewire]     Size: 2560x1440
+11:15:36.012: [pipewire]     Framerate: 0/1
+11:15:36.014: [pipewire] Negotiated format:
+11:15:36.014: [pipewire]     Format: 12 (Spa:Enum:VideoFormat:BGRA)
+11:15:36.014: [pipewire]     Modifier: 0x100000000000002
+11:15:36.014: [pipewire]     Size: 2560x1440
+11:15:36.014: [pipewire]     Framerate: 0/1
+11:15:36.028: [pipewire] Negotiated format:
+11:15:36.028: [pipewire]     Format: 12 (Spa:Enum:VideoFormat:BGRA)
+11:15:36.028: [pipewire]     Modifier: 0x100000000000002
+11:15:36.028: [pipewire]     Size: 2560x1440
+11:15:36.028: [pipewire]     Framerate: 0/1
+11:15:36.028: Cannot create EGLImage: Arguments are inconsistent (for example, a valid context requires buffers not supplied by a valid surface).
+11:15:36.028: [pipewire] Renegotiating stream
+11:15:36.029: [pipewire] Stream 0x55d0729d88e0 state: "paused" (error: none)
+11:15:36.039: [pipewire] Negotiated format:
+11:15:36.039: [pipewire]     Format: 12 (Spa:Enum:VideoFormat:BGRA)
+11:15:36.039: [pipewire]     Modifier: 0x100000000000004
+11:15:36.039: [pipewire]     Size: 1920x1080
+11:15:36.039: [pipewire]     Framerate: 0/1
+11:15:36.039: [pipewire] Stream 0x55d0729a16a0 state: "streaming" (error: none)
+11:15:36.041: [pipewire] Negotiated format:
+11:15:36.041: [pipewire]     Format: 12 (Spa:Enum:VideoFormat:BGRA)
+11:15:36.041: [pipewire]     Modifier: 0x100000000000002
+11:15:36.041: [pipewire]     Size: 1920x1080
+11:15:36.041: [pipewire]     Framerate: 0/1
+11:15:36.047: [pipewire] Stream 0x55d0729d88e0 state: "streaming" (error: none)
+11:15:37.938: User switched to scene 'main'
+11:15:38.256: User switched to scene 'side'
+11:15:38.616: [pipewire] Stream 0x55d0729d88e0 state: "paused" (error: none)
+11:15:39.302: User switched to scene 'main'
+11:15:39.316: [pipewire] Stream 0x55d0729d88e0 state: "streaming" (error: none)
+11:15:39.650: [pipewire] Stream 0x55d0729a16a0 state: "paused" (error: none)
+11:20:59.150: User switched to scene 'side'
+11:20:59.178: [pipewire] Stream 0x55d0729a16a0 state: "streaming" (error: none)
+11:20:59.483: [pipewire] Stream 0x55d0729d88e0 state: "paused" (error: none)
+11:21:06.094: User switched to scene 'main'
+11:21:06.127: [pipewire] Stream 0x55d0729d88e0 state: "streaming" (error: none)
+11:21:06.450: [pipewire] Stream 0x55d0729a16a0 state: "paused" (error: none)
+11:21:07.132: User switched to scene 'side'
+11:21:07.151: [pipewire] Stream 0x55d0729a16a0 state: "streaming" (error: none)
+11:21:07.483: [pipewire] Stream 0x55d0729d88e0 state: "paused" (error: none)
+11:21:12.909: [pipewire] Stream 0x55d0729a16a0 state: "paused" (error: none)
+11:21:12.909: [pipewire] Stream 0x55d0729a16a0 state: "unconnected" (error: none)
+11:21:12.913: PipeWire initialized
+11:21:12.927: [pipewire] Screencast session created
+11:21:28.365: [pipewire] Failed to select source, denied or cancelled by user
+11:21:29.959: PipeWire initialized
+11:21:29.966: [pipewire] Screencast session created
+11:21:53.316: [pipewire] Asking for monitor and window
+11:21:53.331: [pipewire] source selected, setting up screencast
+11:21:53.340: [pipewire] Server version: 1.6.3
+11:21:53.340: [pipewire] Library version: 1.6.3
+11:21:53.341: [pipewire] Header version: 1.6.2
+11:21:53.341: [pipewire] Created stream 0x55d0729a36c0
+11:21:53.341: [pipewire] Stream 0x55d0729a36c0 state: "connecting" (error: none)
+11:21:53.341: [pipewire] Playing stream 0x55d0729a36c0
+11:21:53.342: [pipewire] Stream 0x55d0729a36c0 state: "paused" (error: none)
+11:21:53.365: [pipewire] Negotiated format:
+11:21:53.366: [pipewire]     Format: 12 (Spa:Enum:VideoFormat:BGRA)
+11:21:53.366: [pipewire]     Modifier: 0x0
+11:21:53.366: [pipewire]     Size: 936x994
+11:21:53.366: [pipewire]     Framerate: 0/1
+11:21:53.368: [pipewire] Negotiated format:
+11:21:53.368: [pipewire]     Format: 12 (Spa:Enum:VideoFormat:BGRA)
+11:21:53.368: [pipewire]     Modifier: 0x100000000000004
+11:21:53.368: [pipewire]     Size: 936x994
+11:21:53.368: [pipewire]     Framerate: 0/1
+11:21:53.372: [pipewire] Stream 0x55d0729a36c0 state: "streaming" (error: none)
+11:21:53.380: Cannot create EGLImage: Arguments are inconsistent (for example, a valid context requires buffers not supplied by a valid surface).
+11:21:53.380: [pipewire] Renegotiating stream
+11:21:53.381: [pipewire] Stream 0x55d0729a36c0 state: "paused" (error: none)
+11:21:53.381: [pipewire] Negotiated format:
+11:21:53.381: [pipewire]     Format: 12 (Spa:Enum:VideoFormat:BGRA)
+11:21:53.381: [pipewire]     Modifier: 0x100000000000004
+11:21:53.381: [pipewire]     Size: 936x994
+11:21:53.381: [pipewire]     Framerate: 0/1
+11:21:53.385: [pipewire] Negotiated format:
+11:21:53.385: [pipewire]     Format: 12 (Spa:Enum:VideoFormat:BGRA)
+11:21:53.385: [pipewire]     Modifier: 0x100000000000002
+11:21:53.385: [pipewire]     Size: 936x994
+11:21:53.385: [pipewire]     Framerate: 0/1
+11:21:53.392: [pipewire] Stream 0x55d0729a36c0 state: "streaming" (error: none)
+11:22:04.479: User switched to scene 'main'
+11:22:04.502: [pipewire] Stream 0x55d0729d88e0 state: "streaming" (error: none)
+11:22:04.816: [pipewire] Stream 0x55d0729a36c0 state: "paused" (error: none)
+11:22:06.423: User switched to scene 'side'
+11:22:06.449: [pipewire] Stream 0x55d0729a36c0 state: "streaming" (error: none)
+11:22:06.783: [pipewire] Stream 0x55d0729d88e0 state: "paused" (error: none)
+11:22:06.902: User switched to scene 'main'
+11:22:06.917: [pipewire] Stream 0x55d0729d88e0 state: "streaming" (error: none)
+11:22:07.250: [pipewire] Stream 0x55d0729a36c0 state: "paused" (error: none)
+11:24:54.082: User switched to scene 'side'
+11:24:54.098: [pipewire] Stream 0x55d0729a36c0 state: "streaming" (error: none)
+11:24:54.103: [pipewire] Stream 0x55d0729a36c0 state: "paused" (error: none)
+11:24:54.104: [pipewire] Negotiated format:
+11:24:54.104: [pipewire]     Format: 12 (Spa:Enum:VideoFormat:BGRA)
+11:24:54.104: [pipewire]     Modifier: 0x100000000000002
+11:24:54.104: [pipewire]     Size: 1920x1080
+11:24:54.104: [pipewire]     Framerate: 0/1
+11:24:54.110: [pipewire] Negotiated format:
+11:24:54.110: [pipewire]     Format: 12 (Spa:Enum:VideoFormat:BGRA)
+11:24:54.110: [pipewire]     Modifier: 0x100000000000002
+11:24:54.110: [pipewire]     Size: 1920x1080
+11:24:54.110: [pipewire]     Framerate: 0/1
+11:24:54.113: [pipewire] Negotiated format:
+11:24:54.113: [pipewire]     Format: 12 (Spa:Enum:VideoFormat:BGRA)
+11:24:54.113: [pipewire]     Modifier: 0x100000000000002
+11:24:54.113: [pipewire]     Size: 1920x1080
+11:24:54.113: [pipewire]     Framerate: 0/1
+11:24:54.115: [pipewire] Negotiated format:
+11:24:54.115: [pipewire]     Format: 12 (Spa:Enum:VideoFormat:BGRA)
+11:24:54.115: [pipewire]     Modifier: 0x100000000000002
+11:24:54.115: [pipewire]     Size: 1920x1080
+11:24:54.115: [pipewire]     Framerate: 0/1
+11:24:54.126: [pipewire] Stream 0x55d0729a36c0 state: "streaming" (error: none)
+11:24:54.416: [pipewire] Stream 0x55d0729d88e0 state: "paused" (error: none)
+11:24:55.276: User switched to scene 'main'
+11:24:55.283: [pipewire] Stream 0x55d0729d88e0 state: "streaming" (error: none)
+11:24:55.616: [pipewire] Stream 0x55d0729a36c0 state: "paused" (error: none)
+11:26:15.741: ---------------------------------
+11:26:15.741: [x264 encoder: 'simple_video_stream'] preset: veryfast
+11:26:15.742: [x264 encoder: 'simple_video_stream'] settings:
+11:26:15.742: 	rate_control: CBR
+11:26:15.742: 	bitrate:      6000
+11:26:15.742: 	buffer size:  6000
+11:26:15.742: 	crf:          23
+11:26:15.742: 	fps_num:      30
+11:26:15.742: 	fps_den:      1
+11:26:15.742: 	width:        1280
+11:26:15.742: 	height:       720
+11:26:15.742: 	keyint:       250
+11:26:15.742: 
+11:26:15.750: libfdk_aac encoder created
+11:26:15.750: libfdk_aac bitrate: 160, channels: 2
+11:26:15.752: ==== Recording Start ===============================================
+11:26:15.752: [mp4 output: 'simple_file_output'] Writing Hybrid MP4/MOV file '/home/troy_chan55/MyStuff/obs-recordings/2026-04-25 11-26-15.mp4'...
+11:26:26.616: [mp4 muxer: 'simple_file_output'] Flushing final fragment...
+11:26:26.618: [mp4 muxer: 'simple_file_output'] Number of fragments: 2
+11:26:26.618: [mp4 muxer: 'simple_file_output'] Full moov size: 6 KiB
+11:26:26.618: [mp4 muxer: 'simple_file_output'] Final mdat size: 7527 KiB
+11:26:26.618: Output 'simple_file_output': stopping
+11:26:26.618: Output 'simple_file_output': Total frames output: 305
+11:26:26.618: Output 'simple_file_output': Total drawn frames: 326
+11:26:26.619: [mp4 output: 'simple_file_output'] Waiting for file writer to finish...
+11:26:26.621: ==== Recording Stop ================================================
+11:26:26.622: [mp4 output: 'simple_file_output'] File output complete. Finalization took 5 ms.
+11:26:26.647: libfdk_aac encoder destroyed
+11:26:55.875: ---------------------------------
+11:26:55.875: [x264 encoder: 'simple_video_stream'] preset: veryfast
+11:26:55.875: [x264 encoder: 'simple_video_stream'] settings:
+11:26:55.875: 	rate_control: CBR
+11:26:55.875: 	bitrate:      6000
+11:26:55.875: 	buffer size:  6000
+11:26:55.875: 	crf:          23
+11:26:55.875: 	fps_num:      30
+11:26:55.875: 	fps_den:      1
+11:26:55.875: 	width:        1280
+11:26:55.875: 	height:       720
+11:26:55.875: 	keyint:       250
+11:26:55.875: 
+11:26:55.886: libfdk_aac encoder created
+11:26:55.886: libfdk_aac bitrate: 160, channels: 2
+11:26:55.887: ==== Recording Start ===============================================
+11:26:55.887: [mp4 output: 'simple_file_output'] Writing Hybrid MP4/MOV file '/home/troy_chan55/MyStuff/obs-recordings/2026-04-25 11-26-55.mp4'...
+11:28:14.819: [mp4 muxer: 'simple_file_output'] Flushing final fragment...
+11:28:14.820: [mp4 muxer: 'simple_file_output'] Number of fragments: 11
+11:28:14.821: [mp4 muxer: 'simple_file_output'] Full moov size: 43 KiB
+11:28:14.822: [mp4 muxer: 'simple_file_output'] Final mdat size: 58743 KiB
+11:28:14.822: Output 'simple_file_output': stopping
+11:28:14.822: Output 'simple_file_output': Total frames output: 2347
+11:28:14.822: Output 'simple_file_output': Total drawn frames: 2368
+11:28:14.822: [mp4 output: 'simple_file_output'] Waiting for file writer to finish...
+11:28:14.823: ==== Recording Stop ================================================
+11:28:14.825: [mp4 output: 'simple_file_output'] File output complete. Finalization took 6 ms.
+11:28:14.842: libfdk_aac encoder destroyed
+11:28:25.617: ---------------------------------
+11:28:25.617: [x264 encoder: 'simple_video_stream'] preset: veryfast
+11:28:25.617: [x264 encoder: 'simple_video_stream'] settings:
+11:28:25.617: 	rate_control: CBR
+11:28:25.617: 	bitrate:      6000
+11:28:25.617: 	buffer size:  6000
+11:28:25.617: 	crf:          23
+11:28:25.617: 	fps_num:      30
+11:28:25.617: 	fps_den:      1
+11:28:25.617: 	width:        1280
+11:28:25.617: 	height:       720
+11:28:25.617: 	keyint:       250
+11:28:25.617: 
+11:28:25.625: libfdk_aac encoder created
+11:28:25.625: libfdk_aac bitrate: 160, channels: 2
+11:28:25.627: ==== Recording Start ===============================================
+11:28:25.627: [mp4 output: 'simple_file_output'] Writing Hybrid MP4/MOV file '/home/troy_chan55/MyStuff/obs-recordings/2026-04-25 11-28-25.mp4'...
+11:30:19.118: [mp4 muxer: 'simple_file_output'] Flushing final fragment...
+11:30:19.119: [mp4 muxer: 'simple_file_output'] Number of fragments: 15
+11:30:19.121: [mp4 muxer: 'simple_file_output'] Full moov size: 61 KiB
+11:30:19.121: [mp4 muxer: 'simple_file_output'] Final mdat size: 84751 KiB
+11:30:19.121: Output 'simple_file_output': stopping
+11:30:19.121: Output 'simple_file_output': Total frames output: 3384
+11:30:19.121: Output 'simple_file_output': Total drawn frames: 3405
+11:30:19.122: [mp4 output: 'simple_file_output'] Waiting for file writer to finish...
+11:30:19.123: [mp4 output: 'simple_file_output'] File output complete. Finalization took 4 ms.
+11:30:19.125: ==== Recording Stop ================================================
+11:30:19.142: libfdk_aac encoder destroyed
+11:30:38.684: ---------------------------------
+11:30:38.684: [x264 encoder: 'simple_video_stream'] preset: veryfast
+11:30:38.684: [x264 encoder: 'simple_video_stream'] settings:
+11:30:38.684: 	rate_control: CBR
+11:30:38.684: 	bitrate:      6000
+11:30:38.684: 	buffer size:  6000
+11:30:38.684: 	crf:          23
+11:30:38.684: 	fps_num:      30
+11:30:38.684: 	fps_den:      1
+11:30:38.684: 	width:        1280
+11:30:38.684: 	height:       720
+11:30:38.684: 	keyint:       250
+11:30:38.684: 
+11:30:38.694: libfdk_aac encoder created
+11:30:38.694: libfdk_aac bitrate: 160, channels: 2
+11:30:38.696: ==== Recording Start ===============================================
+11:30:38.696: [mp4 output: 'simple_file_output'] Writing Hybrid MP4/MOV file '/home/troy_chan55/MyStuff/obs-recordings/2026-04-25 11-30-38.mp4'...
+11:32:10.466: adding 149 milliseconds of audio buffering, total audio buffering is now 213 milliseconds (source: Mic/Aux)
+11:32:10.466: 
+11:36:10.552: [mp4 muxer: 'simple_file_output'] Flushing final fragment...
+11:36:10.554: [mp4 muxer: 'simple_file_output'] Number of fragments: 41
+11:36:10.559: [mp4 muxer: 'simple_file_output'] Full moov size: 178 KiB
+11:36:10.559: [mp4 muxer: 'simple_file_output'] Final mdat size: 248979 KiB
+11:36:10.559: Output 'simple_file_output': stopping
+11:36:10.559: Output 'simple_file_output': Total frames output: 9932
+11:36:10.559: Output 'simple_file_output': Total drawn frames: 9956
+11:36:10.560: [mp4 output: 'simple_file_output'] Waiting for file writer to finish...
+11:36:10.560: [mp4 output: 'simple_file_output'] File output complete. Finalization took 8 ms.
+11:36:10.561: ==== Recording Stop ================================================
+11:36:10.576: libfdk_aac encoder destroyed
+11:39:02.024: ---------------------------------
+11:39:02.024: [x264 encoder: 'simple_video_stream'] preset: veryfast
+11:39:02.024: [x264 encoder: 'simple_video_stream'] settings:
+11:39:02.024: 	rate_control: CBR
+11:39:02.024: 	bitrate:      6000
+11:39:02.024: 	buffer size:  6000
+11:39:02.024: 	crf:          23
+11:39:02.024: 	fps_num:      30
+11:39:02.024: 	fps_den:      1
+11:39:02.024: 	width:        1280
+11:39:02.024: 	height:       720
+11:39:02.024: 	keyint:       250
+11:39:02.024: 
+11:39:02.027: libfdk_aac encoder created
+11:39:02.027: libfdk_aac bitrate: 160, channels: 2
+11:39:02.028: ==== Recording Start ===============================================
+11:39:02.028: [mp4 output: 'simple_file_output'] Writing Hybrid MP4/MOV file '/home/troy_chan55/MyStuff/obs-recordings/2026-04-25 11-39-02.mp4'...
+11:39:16.219: [mp4 muxer: 'simple_file_output'] Flushing final fragment...
+11:39:16.221: [mp4 muxer: 'simple_file_output'] Number of fragments: 2
+11:39:16.222: [mp4 muxer: 'simple_file_output'] Full moov size: 8 KiB
+11:39:16.222: [mp4 muxer: 'simple_file_output'] Final mdat size: 10036 KiB
+11:39:16.222: Output 'simple_file_output': stopping
+11:39:16.222: Output 'simple_file_output': Total frames output: 405
+11:39:16.222: Output 'simple_file_output': Total drawn frames: 426
+11:39:16.222: [mp4 output: 'simple_file_output'] Waiting for file writer to finish...
+11:39:16.224: ==== Recording Stop ================================================
+11:39:16.227: [mp4 output: 'simple_file_output'] File output complete. Finalization took 7 ms.
+11:39:16.247: libfdk_aac encoder destroyed
+11:39:25.963: ---------------------------------
+11:39:25.963: [x264 encoder: 'simple_video_stream'] preset: veryfast
+11:39:25.963: [x264 encoder: 'simple_video_stream'] settings:
+11:39:25.963: 	rate_control: CBR
+11:39:25.963: 	bitrate:      6000
+11:39:25.963: 	buffer size:  6000
+11:39:25.963: 	crf:          23
+11:39:25.963: 	fps_num:      30
+11:39:25.963: 	fps_den:      1
+11:39:25.963: 	width:        1280
+11:39:25.963: 	height:       720
+11:39:25.963: 	keyint:       250
+11:39:25.963: 
+11:39:25.966: libfdk_aac encoder created
+11:39:25.966: libfdk_aac bitrate: 160, channels: 2
+11:39:25.967: ==== Recording Start ===============================================
+11:39:25.967: [mp4 output: 'simple_file_output'] Writing Hybrid MP4/MOV file '/home/troy_chan55/MyStuff/obs-recordings/2026-04-25 11-39-25.mp4'...
+11:40:00.955: [mp4 muxer: 'simple_file_output'] Flushing final fragment...
+11:40:00.956: [mp4 muxer: 'simple_file_output'] Number of fragments: 5
+11:40:00.956: [mp4 muxer: 'simple_file_output'] Full moov size: 19 KiB
+11:40:00.956: [mp4 muxer: 'simple_file_output'] Final mdat size: 25686 KiB
+11:40:00.956: Output 'simple_file_output': stopping
+11:40:00.956: Output 'simple_file_output': Total frames output: 1029
+11:40:00.957: Output 'simple_file_output': Total drawn frames: 1050
+11:40:00.957: [mp4 output: 'simple_file_output'] Waiting for file writer to finish...
+11:40:00.958: ==== Recording Stop ================================================
+11:40:00.958: [mp4 output: 'simple_file_output'] File output complete. Finalization took 2 ms.
+11:40:00.972: libfdk_aac encoder destroyed
+11:40:14.614: ---------------------------------
+11:40:14.614: [x264 encoder: 'simple_video_stream'] preset: veryfast
+11:40:14.614: [x264 encoder: 'simple_video_stream'] settings:
+11:40:14.614: 	rate_control: CBR
+11:40:14.614: 	bitrate:      6000
+11:40:14.614: 	buffer size:  6000
+11:40:14.614: 	crf:          23
+11:40:14.614: 	fps_num:      30
+11:40:14.614: 	fps_den:      1
+11:40:14.614: 	width:        1280
+11:40:14.614: 	height:       720
+11:40:14.614: 	keyint:       250
+11:40:14.614: 
+11:40:14.615: libfdk_aac encoder created
+11:40:14.616: libfdk_aac bitrate: 160, channels: 2
+11:40:14.618: ==== Recording Start ===============================================
+11:40:14.618: [mp4 output: 'simple_file_output'] Writing Hybrid MP4/MOV file '/home/troy_chan55/MyStuff/obs-recordings/2026-04-25 11-40-14.mp4'...
+11:40:29.919: [mp4 muxer: 'simple_file_output'] Flushing final fragment...
+11:40:29.922: [mp4 muxer: 'simple_file_output'] Number of fragments: 2
+11:40:29.925: [mp4 muxer: 'simple_file_output'] Full moov size: 9 KiB
+11:40:29.925: [mp4 muxer: 'simple_file_output'] Final mdat size: 10863 KiB
+11:40:29.925: Output 'simple_file_output': stopping
+11:40:29.925: Output 'simple_file_output': Total frames output: 438
+11:40:29.925: Output 'simple_file_output': Total drawn frames: 459
+11:40:29.925: [mp4 output: 'simple_file_output'] Waiting for file writer to finish...
+11:40:29.926: ==== Recording Stop ================================================
+11:40:29.928: [mp4 output: 'simple_file_output'] File output complete. Finalization took 9 ms.
+11:40:29.939: libfdk_aac encoder destroyed
+11:40:35.034: ---------------------------------
+11:40:35.034: [x264 encoder: 'simple_video_stream'] preset: veryfast
+11:40:35.034: [x264 encoder: 'simple_video_stream'] settings:
+11:40:35.034: 	rate_control: CBR
+11:40:35.034: 	bitrate:      6000
+11:40:35.034: 	buffer size:  6000
+11:40:35.034: 	crf:          23
+11:40:35.034: 	fps_num:      30
+11:40:35.034: 	fps_den:      1
+11:40:35.034: 	width:        1280
+11:40:35.034: 	height:       720
+11:40:35.034: 	keyint:       250
+11:40:35.034: 
+11:40:35.037: libfdk_aac encoder created
+11:40:35.037: libfdk_aac bitrate: 160, channels: 2
+11:40:35.038: ==== Recording Start ===============================================
+11:40:35.038: [mp4 output: 'simple_file_output'] Writing Hybrid MP4/MOV file '/home/troy_chan55/MyStuff/obs-recordings/2026-04-25 11-40-35.mp4'...
+11:40:47.617: [mp4 muxer: 'simple_file_output'] Flushing final fragment...
+11:40:47.619: [mp4 muxer: 'simple_file_output'] Number of fragments: 2
+11:40:47.620: [mp4 muxer: 'simple_file_output'] Full moov size: 7 KiB
+11:40:47.620: [mp4 muxer: 'simple_file_output'] Final mdat size: 8832 KiB
+11:40:47.620: Output 'simple_file_output': stopping
+11:40:47.620: Output 'simple_file_output': Total frames output: 357
+11:40:47.620: Output 'simple_file_output': Total drawn frames: 378
+11:40:47.620: [mp4 output: 'simple_file_output'] Waiting for file writer to finish...
+11:40:47.621: ==== Recording Stop ================================================
+11:40:47.625: [mp4 output: 'simple_file_output'] File output complete. Finalization took 8 ms.
+11:40:47.641: libfdk_aac encoder destroyed
+11:40:54.830: ---------------------------------
+11:40:54.830: [x264 encoder: 'simple_video_stream'] preset: veryfast
+11:40:54.830: [x264 encoder: 'simple_video_stream'] settings:
+11:40:54.830: 	rate_control: CBR
+11:40:54.830: 	bitrate:      6000
+11:40:54.830: 	buffer size:  6000
+11:40:54.830: 	crf:          23
+11:40:54.830: 	fps_num:      30
+11:40:54.830: 	fps_den:      1
+11:40:54.830: 	width:        1280
+11:40:54.830: 	height:       720
+11:40:54.830: 	keyint:       250
+11:40:54.830: 
+11:40:54.833: libfdk_aac encoder created
+11:40:54.833: libfdk_aac bitrate: 160, channels: 2
+11:40:54.833: ==== Recording Start ===============================================
+11:40:54.834: [mp4 output: 'simple_file_output'] Writing Hybrid MP4/MOV file '/home/troy_chan55/MyStuff/obs-recordings/2026-04-25 11-40-54.mp4'...
+11:41:49.069: [mp4 muxer: 'simple_file_output'] Flushing final fragment...
+11:41:49.071: [mp4 muxer: 'simple_file_output'] Number of fragments: 8
+11:41:49.072: [mp4 muxer: 'simple_file_output'] Full moov size: 30 KiB
+11:41:49.072: [mp4 muxer: 'simple_file_output'] Final mdat size: 40157 KiB
+11:41:49.072: Output 'simple_file_output': stopping
+11:41:49.072: Output 'simple_file_output': Total frames output: 1606
+11:41:49.072: Output 'simple_file_output': Total drawn frames: 1627
+11:41:49.073: [mp4 output: 'simple_file_output'] Waiting for file writer to finish...
+11:41:49.076: ==== Recording Stop ================================================
+11:41:49.077: [mp4 output: 'simple_file_output'] File output complete. Finalization took 7 ms.
+11:41:49.099: libfdk_aac encoder destroyed
+12:50:13.369: ---------------------------------
+12:50:13.369: [x264 encoder: 'simple_video_stream'] preset: veryfast
+12:50:13.369: [x264 encoder: 'simple_video_stream'] settings:
+12:50:13.369: 	rate_control: CBR
+12:50:13.369: 	bitrate:      6000
+12:50:13.369: 	buffer size:  6000
+12:50:13.369: 	crf:          23
+12:50:13.369: 	fps_num:      30
+12:50:13.369: 	fps_den:      1
+12:50:13.369: 	width:        1280
+12:50:13.369: 	height:       720
+12:50:13.369: 	keyint:       250
+12:50:13.369: 
+12:50:13.379: libfdk_aac encoder created
+12:50:13.379: libfdk_aac bitrate: 160, channels: 2
+12:50:13.380: ==== Recording Start ===============================================
+12:50:13.380: [mp4 output: 'simple_file_output'] Writing Hybrid MP4/MOV file '/home/troy_chan55/MyStuff/obs-recordings/2026-04-25 12-50-13.mp4'...
+12:50:40.277: [mp4 muxer: 'simple_file_output'] Flushing final fragment...
+12:50:40.279: [mp4 muxer: 'simple_file_output'] Number of fragments: 4
+12:50:40.280: [mp4 muxer: 'simple_file_output'] Full moov size: 15 KiB
+12:50:40.280: [mp4 muxer: 'simple_file_output'] Final mdat size: 19591 KiB
+12:50:40.280: Output 'simple_file_output': stopping
+12:50:40.280: Output 'simple_file_output': Total frames output: 786
+12:50:40.280: Output 'simple_file_output': Total drawn frames: 807
+12:50:40.280: [mp4 output: 'simple_file_output'] Waiting for file writer to finish...
+12:50:40.282: ==== Recording Stop ================================================
+12:50:40.285: [mp4 output: 'simple_file_output'] File output complete. Finalization took 8 ms.
+12:50:40.307: libfdk_aac encoder destroyed
+12:50:43.768: ---------------------------------
+12:50:43.768: [x264 encoder: 'simple_video_stream'] preset: veryfast
+12:50:43.768: [x264 encoder: 'simple_video_stream'] settings:
+12:50:43.768: 	rate_control: CBR
+12:50:43.768: 	bitrate:      6000
+12:50:43.768: 	buffer size:  6000
+12:50:43.768: 	crf:          23
+12:50:43.768: 	fps_num:      30
+12:50:43.768: 	fps_den:      1
+12:50:43.768: 	width:        1280
+12:50:43.768: 	height:       720
+12:50:43.768: 	keyint:       250
+12:50:43.768: 
+12:50:43.771: libfdk_aac encoder created
+12:50:43.771: libfdk_aac bitrate: 160, channels: 2
+12:50:43.771: ==== Recording Start ===============================================
+12:50:43.771: [mp4 output: 'simple_file_output'] Writing Hybrid MP4/MOV file '/home/troy_chan55/MyStuff/obs-recordings/2026-04-25 12-50-43.mp4'...
+12:50:58.742: [mp4 muxer: 'simple_file_output'] Flushing final fragment...
+12:50:58.743: [mp4 muxer: 'simple_file_output'] Number of fragments: 4
+12:50:58.744: [mp4 muxer: 'simple_file_output'] Full moov size: 9 KiB
+12:50:58.744: [mp4 muxer: 'simple_file_output'] Final mdat size: 10638 KiB
+12:50:58.744: Output 'simple_file_output': stopping
+12:50:58.744: Output 'simple_file_output': Total frames output: 429
+12:50:58.744: Output 'simple_file_output': Total drawn frames: 450
+12:50:58.745: [mp4 output: 'simple_file_output'] Waiting for file writer to finish...
+12:50:58.751: [mp4 output: 'simple_file_output'] File output complete. Finalization took 9 ms.
+12:50:58.760: ==== Recording Stop ================================================
+12:50:58.772: libfdk_aac encoder destroyed
+12:51:05.004: ---------------------------------
+12:51:05.004: [x264 encoder: 'simple_video_stream'] preset: veryfast
+12:51:05.004: [x264 encoder: 'simple_video_stream'] settings:
+12:51:05.004: 	rate_control: CBR
+12:51:05.004: 	bitrate:      6000
+12:51:05.004: 	buffer size:  6000
+12:51:05.004: 	crf:          23
+12:51:05.004: 	fps_num:      30
+12:51:05.004: 	fps_den:      1
+12:51:05.004: 	width:        1280
+12:51:05.004: 	height:       720
+12:51:05.004: 	keyint:       250
+12:51:05.004: 
+12:51:05.011: libfdk_aac encoder created
+12:51:05.011: libfdk_aac bitrate: 160, channels: 2
+12:51:05.013: ==== Recording Start ===============================================
+12:51:05.013: [mp4 output: 'simple_file_output'] Writing Hybrid MP4/MOV file '/home/troy_chan55/MyStuff/obs-recordings/2026-04-25 12-51-05.mp4'...
+12:53:51.893: [mp4 muxer: 'simple_file_output'] Flushing final fragment...
+12:53:51.894: [mp4 muxer: 'simple_file_output'] Number of fragments: 22
+12:53:51.896: [mp4 muxer: 'simple_file_output'] Full moov size: 90 KiB
+12:53:51.896: [mp4 muxer: 'simple_file_output'] Final mdat size: 124931 KiB
+12:53:51.896: Output 'simple_file_output': stopping
+12:53:51.896: Output 'simple_file_output': Total frames output: 4986
+12:53:51.896: Output 'simple_file_output': Total drawn frames: 5006
+12:53:51.897: [mp4 output: 'simple_file_output'] Waiting for file writer to finish...
+12:53:51.897: [mp4 output: 'simple_file_output'] File output complete. Finalization took 4 ms.
+12:53:51.898: ==== Recording Stop ================================================
+12:53:51.911: libfdk_aac encoder destroyed
+12:56:11.801: ---------------------------------
+12:56:11.801: [x264 encoder: 'simple_video_stream'] preset: veryfast
+12:56:11.801: [x264 encoder: 'simple_video_stream'] settings:
+12:56:11.801: 	rate_control: CBR
+12:56:11.801: 	bitrate:      6000
+12:56:11.801: 	buffer size:  6000
+12:56:11.801: 	crf:          23
+12:56:11.801: 	fps_num:      30
+12:56:11.801: 	fps_den:      1
+12:56:11.801: 	width:        1280
+12:56:11.801: 	height:       720
+12:56:11.801: 	keyint:       250
+12:56:11.801: 
+12:56:11.810: libfdk_aac encoder created
+12:56:11.810: libfdk_aac bitrate: 160, channels: 2
+12:56:11.812: ==== Recording Start ===============================================
+12:56:11.812: [mp4 output: 'simple_file_output'] Writing Hybrid MP4/MOV file '/home/troy_chan55/MyStuff/obs-recordings/2026-04-25 12-56-11.mp4'...
+12:57:36.375: [mp4 muxer: 'simple_file_output'] Flushing final fragment...
+12:57:36.378: [mp4 muxer: 'simple_file_output'] Number of fragments: 11
+12:57:36.379: [mp4 muxer: 'simple_file_output'] Full moov size: 46 KiB
+12:57:36.379: [mp4 muxer: 'simple_file_output'] Final mdat size: 62981 KiB
+12:57:36.379: Output 'simple_file_output': stopping
+12:57:36.379: Output 'simple_file_output': Total frames output: 2516
+12:57:36.379: Output 'simple_file_output': Total drawn frames: 2537
+12:57:36.379: [mp4 output: 'simple_file_output'] Waiting for file writer to finish...
+12:57:36.380: ==== Recording Stop ================================================
+12:57:36.381: [mp4 output: 'simple_file_output'] File output complete. Finalization took 6 ms.
+12:57:36.401: libfdk_aac encoder destroyed
+12:58:13.655: ---------------------------------
+12:58:13.655: [x264 encoder: 'simple_video_stream'] preset: veryfast
+12:58:13.655: [x264 encoder: 'simple_video_stream'] settings:
+12:58:13.655: 	rate_control: CBR
+12:58:13.655: 	bitrate:      6000
+12:58:13.655: 	buffer size:  6000
+12:58:13.655: 	crf:          23
+12:58:13.655: 	fps_num:      30
+12:58:13.655: 	fps_den:      1
+12:58:13.655: 	width:        1280
+12:58:13.655: 	height:       720
+12:58:13.655: 	keyint:       250
+12:58:13.655: 
+12:58:13.659: libfdk_aac encoder created
+12:58:13.659: libfdk_aac bitrate: 160, channels: 2
+12:58:13.662: ==== Recording Start ===============================================
+12:58:13.662: [mp4 output: 'simple_file_output'] Writing Hybrid MP4/MOV file '/home/troy_chan55/MyStuff/obs-recordings/2026-04-25 12-58-13.mp4'...
+12:59:05.807: [mp4 muxer: 'simple_file_output'] Flushing final fragment...
+12:59:05.809: [mp4 muxer: 'simple_file_output'] Number of fragments: 7
+12:59:05.810: [mp4 muxer: 'simple_file_output'] Full moov size: 28 KiB
+12:59:05.810: [mp4 muxer: 'simple_file_output'] Final mdat size: 38602 KiB
+12:59:05.810: Output 'simple_file_output': stopping
+12:59:05.810: Output 'simple_file_output': Total frames output: 1544
+12:59:05.810: Output 'simple_file_output': Total drawn frames: 1565
+12:59:05.810: [mp4 output: 'simple_file_output'] Waiting for file writer to finish...
+12:59:05.812: ==== Recording Stop ================================================
+12:59:05.814: [mp4 output: 'simple_file_output'] File output complete. Finalization took 7 ms.
+12:59:05.833: libfdk_aac encoder destroyed
+12:59:40.240: ---------------------------------
+12:59:40.240: [x264 encoder: 'simple_video_stream'] preset: veryfast
+12:59:40.240: [x264 encoder: 'simple_video_stream'] settings:
+12:59:40.240: 	rate_control: CBR
+12:59:40.240: 	bitrate:      6000
+12:59:40.240: 	buffer size:  6000
+12:59:40.240: 	crf:          23
+12:59:40.240: 	fps_num:      30
+12:59:40.240: 	fps_den:      1
+12:59:40.240: 	width:        1280
+12:59:40.240: 	height:       720
+12:59:40.240: 	keyint:       250
+12:59:40.240: 
+12:59:40.244: libfdk_aac encoder created
+12:59:40.244: libfdk_aac bitrate: 160, channels: 2
+12:59:40.247: ==== Recording Start ===============================================
+12:59:40.247: [mp4 output: 'simple_file_output'] Writing Hybrid MP4/MOV file '/home/troy_chan55/MyStuff/obs-recordings/2026-04-25 12-59-40.mp4'...
+13:00:23.007: [mp4 muxer: 'simple_file_output'] Flushing final fragment...
+13:00:23.010: [mp4 muxer: 'simple_file_output'] Number of fragments: 6
+13:00:23.010: [mp4 muxer: 'simple_file_output'] Full moov size: 23 KiB
+13:00:23.011: [mp4 muxer: 'simple_file_output'] Final mdat size: 31530 KiB
+13:00:23.011: Output 'simple_file_output': stopping
+13:00:23.011: Output 'simple_file_output': Total frames output: 1262
+13:00:23.011: Output 'simple_file_output': Total drawn frames: 1283
+13:00:23.011: [mp4 output: 'simple_file_output'] Waiting for file writer to finish...
+13:00:23.012: ==== Recording Stop ================================================
+13:00:23.017: [mp4 output: 'simple_file_output'] File output complete. Finalization took 10 ms.
+13:00:23.028: libfdk_aac encoder destroyed
+13:00:29.660: ---------------------------------
+13:00:29.660: [x264 encoder: 'simple_video_stream'] preset: veryfast
+13:00:29.660: [x264 encoder: 'simple_video_stream'] settings:
+13:00:29.660: 	rate_control: CBR
+13:00:29.660: 	bitrate:      6000
+13:00:29.660: 	buffer size:  6000
+13:00:29.660: 	crf:          23
+13:00:29.660: 	fps_num:      30
+13:00:29.660: 	fps_den:      1
+13:00:29.660: 	width:        1280
+13:00:29.660: 	height:       720
+13:00:29.660: 	keyint:       250
+13:00:29.660: 
+13:00:29.665: libfdk_aac encoder created
+13:00:29.666: libfdk_aac bitrate: 160, channels: 2
+13:00:29.668: ==== Recording Start ===============================================
+13:00:29.668: [mp4 output: 'simple_file_output'] Writing Hybrid MP4/MOV file '/home/troy_chan55/MyStuff/obs-recordings/2026-04-25 13-00-29.mp4'...
+13:01:10.777: [mp4 muxer: 'simple_file_output'] Flushing final fragment...
+13:01:10.777: [mp4 muxer: 'simple_file_output'] Number of fragments: 7
+13:01:10.778: [mp4 muxer: 'simple_file_output'] Full moov size: 23 KiB
+13:01:10.778: [mp4 muxer: 'simple_file_output'] Final mdat size: 30349 KiB
+13:01:10.778: Output 'simple_file_output': stopping
+13:01:10.779: Output 'simple_file_output': Total frames output: 1213
+13:01:10.779: Output 'simple_file_output': Total drawn frames: 1234
+13:01:10.779: [mp4 output: 'simple_file_output'] Waiting for file writer to finish...
+13:01:10.779: [mp4 output: 'simple_file_output'] File output complete. Finalization took 2 ms.
+13:01:10.781: ==== Recording Stop ================================================
+13:01:10.806: libfdk_aac encoder destroyed
+13:09:24.501: ---------------------------------
+13:09:24.501: [x264 encoder: 'simple_video_stream'] preset: veryfast
+13:09:24.501: [x264 encoder: 'simple_video_stream'] settings:
+13:09:24.501: 	rate_control: CBR
+13:09:24.501: 	bitrate:      6000
+13:09:24.501: 	buffer size:  6000
+13:09:24.501: 	crf:          23
+13:09:24.501: 	fps_num:      30
+13:09:24.501: 	fps_den:      1
+13:09:24.501: 	width:        1280
+13:09:24.501: 	height:       720
+13:09:24.501: 	keyint:       250
+13:09:24.501: 
+13:09:24.509: libfdk_aac encoder created
+13:09:24.509: libfdk_aac bitrate: 160, channels: 2
+13:09:24.510: ==== Recording Start ===============================================
+13:09:24.510: [mp4 output: 'simple_file_output'] Writing Hybrid MP4/MOV file '/home/troy_chan55/MyStuff/obs-recordings/2026-04-25 13-09-24.mp4'...
+13:09:47.371: [mp4 muxer: 'simple_file_output'] Flushing final fragment...
+13:09:47.375: [mp4 muxer: 'simple_file_output'] Number of fragments: 3
+13:09:47.376: [mp4 muxer: 'simple_file_output'] Full moov size: 13 KiB
+13:09:47.376: [mp4 muxer: 'simple_file_output'] Final mdat size: 16557 KiB
+13:09:47.376: Output 'simple_file_output': stopping
+13:09:47.376: Output 'simple_file_output': Total frames output: 665
+13:09:47.376: Output 'simple_file_output': Total drawn frames: 686
+13:09:47.377: [mp4 output: 'simple_file_output'] Waiting for file writer to finish...
+13:09:47.381: ==== Recording Stop ================================================
+13:09:47.398: [mp4 output: 'simple_file_output'] File output complete. Finalization took 26 ms.
+13:09:47.438: libfdk_aac encoder destroyed
+13:10:15.309: ---------------------------------
+13:10:15.309: [x264 encoder: 'simple_video_stream'] preset: veryfast
+13:10:15.309: [x264 encoder: 'simple_video_stream'] settings:
+13:10:15.309: 	rate_control: CBR
+13:10:15.309: 	bitrate:      6000
+13:10:15.309: 	buffer size:  6000
+13:10:15.309: 	crf:          23
+13:10:15.309: 	fps_num:      30
+13:10:15.309: 	fps_den:      1
+13:10:15.309: 	width:        1280
+13:10:15.309: 	height:       720
+13:10:15.309: 	keyint:       250
+13:10:15.309: 
+13:10:15.319: libfdk_aac encoder created
+13:10:15.319: libfdk_aac bitrate: 160, channels: 2
+13:10:15.321: ==== Recording Start ===============================================
+13:10:15.321: [mp4 output: 'simple_file_output'] Writing Hybrid MP4/MOV file '/home/troy_chan55/MyStuff/obs-recordings/2026-04-25 13-10-15.mp4'...
+13:11:16.842: [mp4 muxer: 'simple_file_output'] Flushing final fragment...
+13:11:16.843: [mp4 muxer: 'simple_file_output'] Number of fragments: 8
+13:11:16.845: [mp4 muxer: 'simple_file_output'] Full moov size: 34 KiB
+13:11:16.845: [mp4 muxer: 'simple_file_output'] Final mdat size: 45650 KiB
+13:11:16.845: Output 'simple_file_output': stopping
+13:11:16.845: Output 'simple_file_output': Total frames output: 1825
+13:11:16.845: Output 'simple_file_output': Total drawn frames: 1846
+13:11:16.845: [mp4 output: 'simple_file_output'] Waiting for file writer to finish...
+13:11:16.847: [mp4 output: 'simple_file_output'] File output complete. Finalization took 4 ms.
+13:11:16.848: ==== Recording Stop ================================================
+13:11:16.871: libfdk_aac encoder destroyed
+13:11:47.400: ---------------------------------
+13:11:47.400: [x264 encoder: 'simple_video_stream'] preset: veryfast
+13:11:47.400: [x264 encoder: 'simple_video_stream'] settings:
+13:11:47.400: 	rate_control: CBR
+13:11:47.400: 	bitrate:      6000
+13:11:47.400: 	buffer size:  6000
+13:11:47.400: 	crf:          23
+13:11:47.400: 	fps_num:      30
+13:11:47.400: 	fps_den:      1
+13:11:47.400: 	width:        1280
+13:11:47.400: 	height:       720
+13:11:47.400: 	keyint:       250
+13:11:47.400: 
+13:11:47.407: libfdk_aac encoder created
+13:11:47.407: libfdk_aac bitrate: 160, channels: 2
+13:11:47.409: ==== Recording Start ===============================================
+13:11:47.409: [mp4 output: 'simple_file_output'] Writing Hybrid MP4/MOV file '/home/troy_chan55/MyStuff/obs-recordings/2026-04-25 13-11-47.mp4'...
+13:12:12.808: [mp4 muxer: 'simple_file_output'] Flushing final fragment...
+13:12:12.812: [mp4 muxer: 'simple_file_output'] Number of fragments: 3
+13:12:12.813: [mp4 muxer: 'simple_file_output'] Full moov size: 14 KiB
+13:12:12.813: [mp4 muxer: 'simple_file_output'] Final mdat size: 18463 KiB
+13:12:12.813: Output 'simple_file_output': stopping
+13:12:12.813: Output 'simple_file_output': Total frames output: 741
+13:12:12.814: Output 'simple_file_output': Total drawn frames: 762
+13:12:12.816: ==== Recording Stop ================================================
+13:12:12.816: [mp4 output: 'simple_file_output'] Waiting for file writer to finish...
+13:12:12.827: [mp4 output: 'simple_file_output'] File output complete. Finalization took 19 ms.
+13:12:12.840: libfdk_aac encoder destroyed
+13:12:16.852: ---------------------------------
+13:12:16.853: [x264 encoder: 'simple_video_stream'] preset: veryfast
+13:12:16.853: [x264 encoder: 'simple_video_stream'] settings:
+13:12:16.853: 	rate_control: CBR
+13:12:16.853: 	bitrate:      6000
+13:12:16.853: 	buffer size:  6000
+13:12:16.853: 	crf:          23
+13:12:16.853: 	fps_num:      30
+13:12:16.853: 	fps_den:      1
+13:12:16.853: 	width:        1280
+13:12:16.853: 	height:       720
+13:12:16.853: 	keyint:       250
+13:12:16.853: 
+13:12:16.860: libfdk_aac encoder created
+13:12:16.860: libfdk_aac bitrate: 160, channels: 2
+13:12:16.862: ==== Recording Start ===============================================
+13:12:16.863: [mp4 output: 'simple_file_output'] Writing Hybrid MP4/MOV file '/home/troy_chan55/MyStuff/obs-recordings/2026-04-25 13-12-16.mp4'...
+13:13:13.742: [mp4 muxer: 'simple_file_output'] Flushing final fragment...
+13:13:13.746: [mp4 muxer: 'simple_file_output'] Number of fragments: 7
+13:13:13.751: [mp4 muxer: 'simple_file_output'] Full moov size: 31 KiB
+13:13:13.751: [mp4 muxer: 'simple_file_output'] Final mdat size: 42164 KiB
+13:13:13.751: Output 'simple_file_output': stopping
+13:13:13.751: Output 'simple_file_output': Total frames output: 1686
+13:13:13.751: Output 'simple_file_output': Total drawn frames: 1707
+13:13:13.753: [mp4 output: 'simple_file_output'] Waiting for file writer to finish...
+13:13:13.757: [mp4 output: 'simple_file_output'] File output complete. Finalization took 15 ms.
+13:13:13.763: ==== Recording Stop ================================================
+13:13:13.770: libfdk_aac encoder destroyed
+13:15:56.180: ---------------------------------
+13:15:56.180: [x264 encoder: 'simple_video_stream'] preset: veryfast
+13:15:56.181: [x264 encoder: 'simple_video_stream'] settings:
+13:15:56.181: 	rate_control: CBR
+13:15:56.181: 	bitrate:      6000
+13:15:56.181: 	buffer size:  6000
+13:15:56.181: 	crf:          23
+13:15:56.181: 	fps_num:      30
+13:15:56.181: 	fps_den:      1
+13:15:56.181: 	width:        1280
+13:15:56.181: 	height:       720
+13:15:56.181: 	keyint:       250
+13:15:56.181: 
+13:15:56.186: libfdk_aac encoder created
+13:15:56.186: libfdk_aac bitrate: 160, channels: 2
+13:15:56.188: ==== Recording Start ===============================================
+13:15:56.188: [mp4 output: 'simple_file_output'] Writing Hybrid MP4/MOV file '/home/troy_chan55/MyStuff/obs-recordings/2026-04-25 13-15-56.mp4'...
+13:16:21.675: [mp4 muxer: 'simple_file_output'] Flushing final fragment...
+13:16:21.677: [mp4 muxer: 'simple_file_output'] Number of fragments: 6
+13:16:21.678: [mp4 muxer: 'simple_file_output'] Full moov size: 14 KiB
+13:16:21.678: [mp4 muxer: 'simple_file_output'] Final mdat size: 18538 KiB
+13:16:21.678: Output 'simple_file_output': stopping
+13:16:21.678: Output 'simple_file_output': Total frames output: 744
+13:16:21.678: Output 'simple_file_output': Total drawn frames: 765
+13:16:21.678: [mp4 output: 'simple_file_output'] Waiting for file writer to finish...
+13:16:21.678: [mp4 output: 'simple_file_output'] File output complete. Finalization took 3 ms.
+13:16:21.680: ==== Recording Stop ================================================
+13:16:21.701: libfdk_aac encoder destroyed
+13:16:42.765: ---------------------------------
+13:16:42.765: [x264 encoder: 'simple_video_stream'] preset: veryfast
+13:16:42.765: [x264 encoder: 'simple_video_stream'] settings:
+13:16:42.765: 	rate_control: CBR
+13:16:42.765: 	bitrate:      6000
+13:16:42.765: 	buffer size:  6000
+13:16:42.765: 	crf:          23
+13:16:42.765: 	fps_num:      30
+13:16:42.765: 	fps_den:      1
+13:16:42.765: 	width:        1280
+13:16:42.765: 	height:       720
+13:16:42.765: 	keyint:       250
+13:16:42.765: 
+13:16:42.769: libfdk_aac encoder created
+13:16:42.769: libfdk_aac bitrate: 160, channels: 2
+13:16:42.770: ==== Recording Start ===============================================
+13:16:42.770: [mp4 output: 'simple_file_output'] Writing Hybrid MP4/MOV file '/home/troy_chan55/MyStuff/obs-recordings/2026-04-25 13-16-42.mp4'...
+13:16:54.476: [mp4 muxer: 'simple_file_output'] Flushing final fragment...
+13:16:54.477: [mp4 muxer: 'simple_file_output'] Number of fragments: 3
+13:16:54.477: [mp4 muxer: 'simple_file_output'] Full moov size: 7 KiB
+13:16:54.477: [mp4 muxer: 'simple_file_output'] Final mdat size: 8180 KiB
+13:16:54.477: Output 'simple_file_output': stopping
+13:16:54.477: Output 'simple_file_output': Total frames output: 331
+13:16:54.477: Output 'simple_file_output': Total drawn frames: 352
+13:16:54.479: [mp4 output: 'simple_file_output'] Waiting for file writer to finish...
+13:16:54.480: ==== Recording Stop ================================================
+13:16:54.481: [mp4 output: 'simple_file_output'] File output complete. Finalization took 4 ms.
+13:16:54.496: libfdk_aac encoder destroyed
+13:17:02.077: ---------------------------------
+13:17:02.077: [x264 encoder: 'simple_video_stream'] preset: veryfast
+13:17:02.077: [x264 encoder: 'simple_video_stream'] settings:
+13:17:02.077: 	rate_control: CBR
+13:17:02.077: 	bitrate:      6000
+13:17:02.077: 	buffer size:  6000
+13:17:02.077: 	crf:          23
+13:17:02.077: 	fps_num:      30
+13:17:02.077: 	fps_den:      1
+13:17:02.077: 	width:        1280
+13:17:02.077: 	height:       720
+13:17:02.077: 	keyint:       250
+13:17:02.077: 
+13:17:02.083: libfdk_aac encoder created
+13:17:02.083: libfdk_aac bitrate: 160, channels: 2
+13:17:02.085: ==== Recording Start ===============================================
+13:17:02.085: [mp4 output: 'simple_file_output'] Writing Hybrid MP4/MOV file '/home/troy_chan55/MyStuff/obs-recordings/2026-04-25 13-17-02.mp4'...
+13:25:36.747: [mp4 muxer: 'simple_file_output'] Flushing final fragment...
+13:25:36.747: [mp4 muxer: 'simple_file_output'] Number of fragments: 74
+13:25:36.754: [mp4 muxer: 'simple_file_output'] Full moov size: 277 KiB
+13:25:36.754: [mp4 muxer: 'simple_file_output'] Final mdat size: 386654 KiB
+13:25:36.754: Output 'simple_file_output': stopping
+13:25:36.754: Output 'simple_file_output': Total frames output: 15419
+13:25:36.754: Output 'simple_file_output': Total drawn frames: 15440
+13:25:36.755: [mp4 output: 'simple_file_output'] Waiting for file writer to finish...
+13:25:36.755: [mp4 output: 'simple_file_output'] File output complete. Finalization took 8 ms.
+13:25:36.756: ==== Recording Stop ================================================
+13:25:36.766: libfdk_aac encoder destroyed
+13:28:52.438: ---------------------------------
+13:28:52.438: [x264 encoder: 'simple_video_stream'] preset: veryfast
+13:28:52.439: [x264 encoder: 'simple_video_stream'] settings:
+13:28:52.439: 	rate_control: CBR
+13:28:52.439: 	bitrate:      6000
+13:28:52.439: 	buffer size:  6000
+13:28:52.439: 	crf:          23
+13:28:52.439: 	fps_num:      30
+13:28:52.439: 	fps_den:      1
+13:28:52.439: 	width:        1280
+13:28:52.439: 	height:       720
+13:28:52.439: 	keyint:       250
+13:28:52.439: 
+13:28:52.446: libfdk_aac encoder created
+13:28:52.446: libfdk_aac bitrate: 160, channels: 2
+13:28:52.448: ==== Recording Start ===============================================
+13:28:52.448: [mp4 output: 'simple_file_output'] Writing Hybrid MP4/MOV file '/home/troy_chan55/MyStuff/obs-recordings/2026-04-25 13-28-52.mp4'...
+13:29:43.467: [mp4 muxer: 'simple_file_output'] Flushing final fragment...
+13:29:43.467: [mp4 muxer: 'simple_file_output'] Number of fragments: 7
+13:29:43.468: [mp4 muxer: 'simple_file_output'] Full moov size: 28 KiB
+13:29:43.468: [mp4 muxer: 'simple_file_output'] Final mdat size: 37750 KiB
+13:29:43.468: Output 'simple_file_output': stopping
+13:29:43.468: Output 'simple_file_output': Total frames output: 1510
+13:29:43.468: Output 'simple_file_output': Total drawn frames: 1530
+13:29:43.468: [mp4 output: 'simple_file_output'] Waiting for file writer to finish...
+13:29:43.470: ==== Recording Stop ================================================
+13:29:43.471: [mp4 output: 'simple_file_output'] File output complete. Finalization took 3 ms.
+13:29:43.485: libfdk_aac encoder destroyed
+13:29:52.461: ---------------------------------
+13:29:52.461: [x264 encoder: 'simple_video_stream'] preset: veryfast
+13:29:52.461: [x264 encoder: 'simple_video_stream'] settings:
+13:29:52.461: 	rate_control: CBR
+13:29:52.461: 	bitrate:      6000
+13:29:52.461: 	buffer size:  6000
+13:29:52.461: 	crf:          23
+13:29:52.461: 	fps_num:      30
+13:29:52.461: 	fps_den:      1
+13:29:52.461: 	width:        1280
+13:29:52.461: 	height:       720
+13:29:52.461: 	keyint:       250
+13:29:52.461: 
+13:29:52.469: libfdk_aac encoder created
+13:29:52.469: libfdk_aac bitrate: 160, channels: 2
+13:29:52.471: ==== Recording Start ===============================================
+13:29:52.471: [mp4 output: 'simple_file_output'] Writing Hybrid MP4/MOV file '/home/troy_chan55/MyStuff/obs-recordings/2026-04-25 13-29-52.mp4'...
+13:34:27.642: [mp4 muxer: 'simple_file_output'] Flushing final fragment...
+13:34:27.644: [mp4 muxer: 'simple_file_output'] Number of fragments: 35
+13:34:27.651: [mp4 muxer: 'simple_file_output'] Full moov size: 148 KiB
+13:34:27.651: [mp4 muxer: 'simple_file_output'] Final mdat size: 206418 KiB
+13:34:27.651: Output 'simple_file_output': stopping
+13:34:27.651: Output 'simple_file_output': Total frames output: 8235
+13:34:27.651: Output 'simple_file_output': Total drawn frames: 8256
+13:34:27.651: [mp4 output: 'simple_file_output'] Waiting for file writer to finish...
+13:34:27.652: [mp4 output: 'simple_file_output'] File output complete. Finalization took 9 ms.
+13:34:27.655: ==== Recording Stop ================================================
+13:34:27.663: libfdk_aac encoder destroyed
+13:37:09.560: ---------------------------------
+13:37:09.560: [x264 encoder: 'simple_video_stream'] preset: veryfast
+13:37:09.560: [x264 encoder: 'simple_video_stream'] settings:
+13:37:09.560: 	rate_control: CBR
+13:37:09.560: 	bitrate:      6000
+13:37:09.560: 	buffer size:  6000
+13:37:09.560: 	crf:          23
+13:37:09.560: 	fps_num:      30
+13:37:09.560: 	fps_den:      1
+13:37:09.560: 	width:        1280
+13:37:09.560: 	height:       720
+13:37:09.560: 	keyint:       250
+13:37:09.560: 
+13:37:09.565: libfdk_aac encoder created
+13:37:09.565: libfdk_aac bitrate: 160, channels: 2
+13:37:09.567: ==== Recording Start ===============================================
+13:37:09.567: [mp4 output: 'simple_file_output'] Writing Hybrid MP4/MOV file '/home/troy_chan55/MyStuff/obs-recordings/2026-04-25 13-37-09.mp4'...
+13:37:34.475: [mp4 muxer: 'simple_file_output'] Flushing final fragment...
+13:37:34.481: [mp4 muxer: 'simple_file_output'] Number of fragments: 3
+13:37:34.482: [mp4 muxer: 'simple_file_output'] Full moov size: 14 KiB
+13:37:34.482: [mp4 muxer: 'simple_file_output'] Final mdat size: 18112 KiB
+13:37:34.482: Output 'simple_file_output': stopping
+13:37:34.482: Output 'simple_file_output': Total frames output: 727
+13:37:34.482: Output 'simple_file_output': Total drawn frames: 748
+13:37:34.482: [mp4 output: 'simple_file_output'] Waiting for file writer to finish...
+13:37:34.483: ==== Recording Stop ================================================
+13:37:34.491: [mp4 output: 'simple_file_output'] File output complete. Finalization took 15 ms.
+13:37:34.512: libfdk_aac encoder destroyed
+13:37:42.189: ---------------------------------
+13:37:42.189: [x264 encoder: 'simple_video_stream'] preset: veryfast
+13:37:42.189: [x264 encoder: 'simple_video_stream'] settings:
+13:37:42.189: 	rate_control: CBR
+13:37:42.189: 	bitrate:      6000
+13:37:42.189: 	buffer size:  6000
+13:37:42.189: 	crf:          23
+13:37:42.189: 	fps_num:      30
+13:37:42.189: 	fps_den:      1
+13:37:42.189: 	width:        1280
+13:37:42.189: 	height:       720
+13:37:42.189: 	keyint:       250
+13:37:42.189: 
+13:37:42.195: libfdk_aac encoder created
+13:37:42.195: libfdk_aac bitrate: 160, channels: 2
+13:37:42.198: ==== Recording Start ===============================================
+13:37:42.198: [mp4 output: 'simple_file_output'] Writing Hybrid MP4/MOV file '/home/troy_chan55/MyStuff/obs-recordings/2026-04-25 13-37-42.mp4'...
+13:42:47.741: [mp4 muxer: 'simple_file_output'] Flushing final fragment...
+13:42:47.744: [mp4 muxer: 'simple_file_output'] Number of fragments: 41
+13:42:47.748: [mp4 muxer: 'simple_file_output'] Full moov size: 164 KiB
+13:42:47.749: [mp4 muxer: 'simple_file_output'] Final mdat size: 229267 KiB
+13:42:47.749: Output 'simple_file_output': stopping
+13:42:47.749: Output 'simple_file_output': Total frames output: 9146
+13:42:47.749: Output 'simple_file_output': Total drawn frames: 9167
+13:42:47.749: [mp4 output: 'simple_file_output'] Waiting for file writer to finish...
+13:42:47.749: [mp4 output: 'simple_file_output'] File output complete. Finalization took 7 ms.
+13:42:47.750: ==== Recording Stop ================================================
+13:42:47.763: libfdk_aac encoder destroyed
+13:52:53.143: ---------------------------------
+13:52:53.144: [x264 encoder: 'simple_video_stream'] preset: veryfast
+13:52:53.144: [x264 encoder: 'simple_video_stream'] settings:
+13:52:53.144: 	rate_control: CBR
+13:52:53.144: 	bitrate:      6000
+13:52:53.144: 	buffer size:  6000
+13:52:53.144: 	crf:          23
+13:52:53.144: 	fps_num:      30
+13:52:53.144: 	fps_den:      1
+13:52:53.144: 	width:        1280
+13:52:53.144: 	height:       720
+13:52:53.144: 	keyint:       250
+13:52:53.144: 
+13:52:53.148: libfdk_aac encoder created
+13:52:53.148: libfdk_aac bitrate: 160, channels: 2
+13:52:53.150: ==== Recording Start ===============================================
+13:52:53.150: [mp4 output: 'simple_file_output'] Writing Hybrid MP4/MOV file '/home/troy_chan55/MyStuff/obs-recordings/2026-04-25 13-52-53.mp4'...
+13:54:03.008: [mp4 muxer: 'simple_file_output'] Flushing final fragment...
+13:54:03.009: [mp4 muxer: 'simple_file_output'] Number of fragments: 9
+13:54:03.011: [mp4 muxer: 'simple_file_output'] Full moov size: 38 KiB
+13:54:03.011: [mp4 muxer: 'simple_file_output'] Final mdat size: 51920 KiB
+13:54:03.011: Output 'simple_file_output': stopping
+13:54:03.011: Output 'simple_file_output': Total frames output: 2075
+13:54:03.011: Output 'simple_file_output': Total drawn frames: 2096
+13:54:03.011: [mp4 output: 'simple_file_output'] Waiting for file writer to finish...
+13:54:03.013: [mp4 output: 'simple_file_output'] File output complete. Finalization took 5 ms.
+13:54:03.015: ==== Recording Stop ================================================
+13:54:03.037: libfdk_aac encoder destroyed
+14:06:39.519: ---------------------------------
+14:06:39.519: [x264 encoder: 'simple_video_stream'] preset: veryfast
+14:06:39.519: [x264 encoder: 'simple_video_stream'] settings:
+14:06:39.519: 	rate_control: CBR
+14:06:39.519: 	bitrate:      6000
+14:06:39.519: 	buffer size:  6000
+14:06:39.519: 	crf:          23
+14:06:39.519: 	fps_num:      30
+14:06:39.519: 	fps_den:      1
+14:06:39.519: 	width:        1280
+14:06:39.519: 	height:       720
+14:06:39.519: 	keyint:       250
+14:06:39.519: 
+14:06:39.524: libfdk_aac encoder created
+14:06:39.524: libfdk_aac bitrate: 160, channels: 2
+14:06:39.526: ==== Recording Start ===============================================
+14:06:39.526: [mp4 output: 'simple_file_output'] Writing Hybrid MP4/MOV file '/home/troy_chan55/MyStuff/obs-recordings/2026-04-25 14-06-39.mp4'...
+14:13:17.376: [mp4 muxer: 'simple_file_output'] Flushing final fragment...
+14:13:17.376: [mp4 muxer: 'simple_file_output'] Number of fragments: 72
+14:13:17.381: [mp4 muxer: 'simple_file_output'] Full moov size: 214 KiB
+14:13:17.381: [mp4 muxer: 'simple_file_output'] Final mdat size: 298793 KiB
+14:13:17.381: Output 'simple_file_output': stopping
+14:13:17.381: Output 'simple_file_output': Total frames output: 11915
+14:13:17.381: Output 'simple_file_output': Total drawn frames: 11936
+14:13:17.382: [mp4 output: 'simple_file_output'] Waiting for file writer to finish...
+14:13:17.382: ==== Recording Stop ================================================
+14:13:17.383: [mp4 output: 'simple_file_output'] File output complete. Finalization took 7 ms.
+14:13:17.389: libfdk_aac encoder destroyed
+14:15:14.560: ---------------------------------
+14:15:14.560: [x264 encoder: 'simple_video_stream'] preset: veryfast
+14:15:14.560: [x264 encoder: 'simple_video_stream'] settings:
+14:15:14.560: 	rate_control: CBR
+14:15:14.560: 	bitrate:      6000
+14:15:14.560: 	buffer size:  6000
+14:15:14.560: 	crf:          23
+14:15:14.560: 	fps_num:      30
+14:15:14.560: 	fps_den:      1
+14:15:14.560: 	width:        1280
+14:15:14.560: 	height:       720
+14:15:14.560: 	keyint:       250
+14:15:14.560: 
+14:15:14.565: libfdk_aac encoder created
+14:15:14.565: libfdk_aac bitrate: 160, channels: 2
+14:15:14.566: ==== Recording Start ===============================================
+14:15:14.567: [mp4 output: 'simple_file_output'] Writing Hybrid MP4/MOV file '/home/troy_chan55/MyStuff/obs-recordings/2026-04-25 14-15-14.mp4'...
+14:15:34.634: [mp4 muxer: 'simple_file_output'] Flushing final fragment...
+14:15:34.635: [mp4 muxer: 'simple_file_output'] Number of fragments: 3
+14:15:34.635: [mp4 muxer: 'simple_file_output'] Full moov size: 11 KiB
+14:15:34.635: [mp4 muxer: 'simple_file_output'] Final mdat size: 14450 KiB
+14:15:34.635: Output 'simple_file_output': stopping
+14:15:34.635: Output 'simple_file_output': Total frames output: 581
+14:15:34.635: Output 'simple_file_output': Total drawn frames: 602
+14:15:34.636: [mp4 output: 'simple_file_output'] Waiting for file writer to finish...
+14:15:34.636: ==== Recording Stop ================================================
+14:15:34.637: [mp4 output: 'simple_file_output'] File output complete. Finalization took 2 ms.
+14:15:34.644: libfdk_aac encoder destroyed
+14:16:08.486: ---------------------------------
+14:16:08.486: [x264 encoder: 'simple_video_stream'] preset: veryfast
+14:16:08.486: [x264 encoder: 'simple_video_stream'] settings:
+14:16:08.486: 	rate_control: CBR
+14:16:08.486: 	bitrate:      6000
+14:16:08.486: 	buffer size:  6000
+14:16:08.486: 	crf:          23
+14:16:08.486: 	fps_num:      30
+14:16:08.486: 	fps_den:      1
+14:16:08.486: 	width:        1280
+14:16:08.486: 	height:       720
+14:16:08.486: 	keyint:       250
+14:16:08.486: 
+14:16:08.489: libfdk_aac encoder created
+14:16:08.489: libfdk_aac bitrate: 160, channels: 2
+14:16:08.490: ==== Recording Start ===============================================
+14:16:08.490: [mp4 output: 'simple_file_output'] Writing Hybrid MP4/MOV file '/home/troy_chan55/MyStuff/obs-recordings/2026-04-25 14-16-08.mp4'...
+14:16:46.251: [mp4 muxer: 'simple_file_output'] Flushing final fragment...
+14:16:46.253: [mp4 muxer: 'simple_file_output'] Number of fragments: 5
+14:16:46.254: [mp4 muxer: 'simple_file_output'] Full moov size: 21 KiB
+14:16:46.254: [mp4 muxer: 'simple_file_output'] Final mdat size: 27767 KiB
+14:16:46.254: Output 'simple_file_output': stopping
+14:16:46.254: Output 'simple_file_output': Total frames output: 1112
+14:16:46.254: Output 'simple_file_output': Total drawn frames: 1133
+14:16:46.254: [mp4 output: 'simple_file_output'] Waiting for file writer to finish...
+14:16:46.257: ==== Recording Stop ================================================
+14:16:46.257: [mp4 output: 'simple_file_output'] File output complete. Finalization took 5 ms.
+14:16:46.265: libfdk_aac encoder destroyed
+14:19:32.974: ---------------------------------
+14:19:32.974: [x264 encoder: 'simple_video_stream'] preset: veryfast
+14:19:32.974: [x264 encoder: 'simple_video_stream'] settings:
+14:19:32.974: 	rate_control: CBR
+14:19:32.974: 	bitrate:      6000
+14:19:32.974: 	buffer size:  6000
+14:19:32.974: 	crf:          23
+14:19:32.974: 	fps_num:      30
+14:19:32.974: 	fps_den:      1
+14:19:32.974: 	width:        1280
+14:19:32.974: 	height:       720
+14:19:32.974: 	keyint:       250
+14:19:32.974: 
+14:19:32.980: libfdk_aac encoder created
+14:19:32.980: libfdk_aac bitrate: 160, channels: 2
+14:19:32.982: ==== Recording Start ===============================================
+14:19:32.982: [mp4 output: 'simple_file_output'] Writing Hybrid MP4/MOV file '/home/troy_chan55/MyStuff/obs-recordings/2026-04-25 14-19-32.mp4'...
+14:22:45.941: [mp4 muxer: 'simple_file_output'] Flushing final fragment...
+14:22:45.942: [mp4 muxer: 'simple_file_output'] Number of fragments: 25
+14:22:45.946: [mp4 muxer: 'simple_file_output'] Full moov size: 104 KiB
+14:22:45.946: [mp4 muxer: 'simple_file_output'] Final mdat size: 144544 KiB
+14:22:45.946: Output 'simple_file_output': stopping
+14:22:45.946: Output 'simple_file_output': Total frames output: 5768
+14:22:45.946: Output 'simple_file_output': Total drawn frames: 5789
+14:22:45.946: [mp4 output: 'simple_file_output'] Waiting for file writer to finish...
+14:22:45.947: [mp4 output: 'simple_file_output'] File output complete. Finalization took 5 ms.
+14:22:45.947: ==== Recording Stop ================================================
+14:22:45.964: libfdk_aac encoder destroyed
+14:23:44.950: ---------------------------------
+14:23:44.951: [x264 encoder: 'simple_video_stream'] preset: veryfast
+14:23:44.951: [x264 encoder: 'simple_video_stream'] settings:
+14:23:44.951: 	rate_control: CBR
+14:23:44.951: 	bitrate:      6000
+14:23:44.951: 	buffer size:  6000
+14:23:44.951: 	crf:          23
+14:23:44.951: 	fps_num:      30
+14:23:44.951: 	fps_den:      1
+14:23:44.951: 	width:        1280
+14:23:44.951: 	height:       720
+14:23:44.951: 	keyint:       250
+14:23:44.951: 
+14:23:44.956: libfdk_aac encoder created
+14:23:44.956: libfdk_aac bitrate: 160, channels: 2
+14:23:44.958: ==== Recording Start ===============================================
+14:23:44.958: [mp4 output: 'simple_file_output'] Writing Hybrid MP4/MOV file '/home/troy_chan55/MyStuff/obs-recordings/2026-04-25 14-23-44.mp4'...
+14:26:10.432: [mp4 muxer: 'simple_file_output'] Flushing final fragment...
+14:26:10.432: [mp4 muxer: 'simple_file_output'] Number of fragments: 26
+14:26:10.433: [mp4 muxer: 'simple_file_output'] Full moov size: 79 KiB
+14:26:10.433: [mp4 muxer: 'simple_file_output'] Final mdat size: 108805 KiB
+14:26:10.433: Output 'simple_file_output': stopping
+14:26:10.433: Output 'simple_file_output': Total frames output: 4343
+14:26:10.433: Output 'simple_file_output': Total drawn frames: 4364
+14:26:10.433: [mp4 output: 'simple_file_output'] Waiting for file writer to finish...
+14:26:10.433: [mp4 output: 'simple_file_output'] File output complete. Finalization took 1 ms.
+14:26:10.434: ==== Recording Stop ================================================
+14:26:10.442: libfdk_aac encoder destroyed
+14:30:04.693: adding 170 milliseconds of audio buffering, total audio buffering is now 384 milliseconds (source: Mic/Aux)
+14:30:04.693: 
+15:32:19.538: adding 234 milliseconds of audio buffering, total audio buffering is now 618 milliseconds (source: Mic/Aux)
+15:32:19.538: 
+15:32:30.935: [pipewire] Stream 0x55d0729d88e0 state: "paused" (error: none)
+15:32:30.936: [pipewire] Negotiated format:
+15:32:30.936: [pipewire]     Format: 12 (Spa:Enum:VideoFormat:BGRA)
+15:32:30.936: [pipewire]     Modifier: 0x100000000000002
+15:32:30.936: [pipewire]     Size: 1920x1080
+15:32:30.936: [pipewire]     Framerate: 0/1
+15:32:31.058: [pipewire] Negotiated format:
+15:32:31.058: [pipewire]     Format: 12 (Spa:Enum:VideoFormat:BGRA)
+15:32:31.058: [pipewire]     Modifier: 0x100000000000002
+15:32:31.058: [pipewire]     Size: 1920x1080
+15:32:31.058: [pipewire]     Framerate: 0/1
+15:32:31.065: [pipewire] Negotiated format:
+15:32:31.065: [pipewire]     Format: 12 (Spa:Enum:VideoFormat:BGRA)
+15:32:31.065: [pipewire]     Modifier: 0x100000000000002
+15:32:31.065: [pipewire]     Size: 1920x1080
+15:32:31.065: [pipewire]     Framerate: 0/1
+15:32:31.085: [pipewire] Stream 0x55d0729d88e0 state: "streaming" (error: none)
+15:33:54.648: [pipewire] Stream 0x55d0729d88e0 state: "paused" (error: none)
+15:33:54.649: [pipewire] Negotiated format:
+15:33:54.649: [pipewire]     Format: 12 (Spa:Enum:VideoFormat:BGRA)
+15:33:54.649: [pipewire]     Modifier: 0x100000000000002
+15:33:54.649: [pipewire]     Size: 1920x1080
+15:33:54.649: [pipewire]     Framerate: 0/1
+15:33:54.653: [pipewire] Negotiated format:
+15:33:54.653: [pipewire]     Format: 12 (Spa:Enum:VideoFormat:BGRA)
+15:33:54.653: [pipewire]     Modifier: 0x100000000000002
+15:33:54.653: [pipewire]     Size: 1920x1080
+15:33:54.653: [pipewire]     Framerate: 0/1
+15:33:54.659: [pipewire] Negotiated format:
+15:33:54.659: [pipewire]     Format: 12 (Spa:Enum:VideoFormat:BGRA)
+15:33:54.659: [pipewire]     Modifier: 0x100000000000002
+15:33:54.659: [pipewire]     Size: 1920x1080
+15:33:54.659: [pipewire]     Framerate: 0/1
+15:33:54.701: [pipewire] Stream 0x55d0729d88e0 state: "streaming" (error: none)
+15:35:45.269: [pipewire] Stream 0x55d0729d88e0 state: "paused" (error: none)
+15:35:45.269: [pipewire] Negotiated format:
+15:35:45.269: [pipewire]     Format: 12 (Spa:Enum:VideoFormat:BGRA)
+15:35:45.269: [pipewire]     Modifier: 0x100000000000002
+15:35:45.269: [pipewire]     Size: 1920x1080
+15:35:45.269: [pipewire]     Framerate: 0/1
+15:35:45.279: [pipewire] Negotiated format:
+15:35:45.279: [pipewire]     Format: 12 (Spa:Enum:VideoFormat:BGRA)
+15:35:45.279: [pipewire]     Modifier: 0x100000000000002
+15:35:45.279: [pipewire]     Size: 1920x1080
+15:35:45.279: [pipewire]     Framerate: 0/1
+15:35:45.279: [pipewire] Negotiated format:
+15:35:45.279: [pipewire]     Format: 12 (Spa:Enum:VideoFormat:BGRA)
+15:35:45.279: [pipewire]     Modifier: 0x100000000000002
+15:35:45.279: [pipewire]     Size: 1920x1080
+15:35:45.279: [pipewire]     Framerate: 0/1
+15:35:45.284: [pipewire] Negotiated format:
+15:35:45.284: [pipewire]     Format: 12 (Spa:Enum:VideoFormat:BGRA)
+15:35:45.284: [pipewire]     Modifier: 0x100000000000002
+15:35:45.284: [pipewire]     Size: 1920x1080
+15:35:45.284: [pipewire]     Framerate: 0/1
+15:35:45.297: [pipewire] Stream 0x55d0729d88e0 state: "streaming" (error: none)
+16:47:59.115: ---------------------------------
+16:47:59.115: [x264 encoder: 'simple_video_stream'] preset: veryfast
+16:47:59.115: [x264 encoder: 'simple_video_stream'] settings:
+16:47:59.115: 	rate_control: CBR
+16:47:59.115: 	bitrate:      6000
+16:47:59.115: 	buffer size:  6000
+16:47:59.115: 	crf:          23
+16:47:59.115: 	fps_num:      30
+16:47:59.115: 	fps_den:      1
+16:47:59.115: 	width:        1280
+16:47:59.115: 	height:       720
+16:47:59.115: 	keyint:       250
+16:47:59.115: 
+16:47:59.121: libfdk_aac encoder created
+16:47:59.121: libfdk_aac bitrate: 160, channels: 2
+16:47:59.123: ==== Recording Start ===============================================
+16:47:59.123: [mp4 output: 'simple_file_output'] Writing Hybrid MP4/MOV file '/home/troy_chan55/MyStuff/obs-recordings/2026-04-25 16-47-59.mp4'...
+16:49:36.702: [mp4 muxer: 'simple_file_output'] Flushing final fragment...
+16:49:36.703: [mp4 muxer: 'simple_file_output'] Number of fragments: 15
+16:49:36.705: [mp4 muxer: 'simple_file_output'] Full moov size: 53 KiB
+16:49:36.705: [mp4 muxer: 'simple_file_output'] Final mdat size: 72788 KiB
+16:49:36.705: Output 'simple_file_output': stopping
+16:49:36.705: Output 'simple_file_output': Total frames output: 2907
+16:49:36.705: Output 'simple_file_output': Total drawn frames: 2928
+16:49:36.705: [mp4 output: 'simple_file_output'] Waiting for file writer to finish...
+16:49:36.705: [mp4 output: 'simple_file_output'] File output complete. Finalization took 3 ms.
+16:49:36.706: ==== Recording Stop ================================================
+16:49:36.714: libfdk_aac encoder destroyed
+19:44:14.642: ---------------------------------
+19:44:14.642: [x264 encoder: 'simple_video_stream'] preset: veryfast
+19:44:14.642: [x264 encoder: 'simple_video_stream'] settings:
+19:44:14.642: 	rate_control: CBR
+19:44:14.642: 	bitrate:      6000
+19:44:14.642: 	buffer size:  6000
+19:44:14.642: 	crf:          23
+19:44:14.642: 	fps_num:      30
+19:44:14.642: 	fps_den:      1
+19:44:14.642: 	width:        1280
+19:44:14.642: 	height:       720
+19:44:14.642: 	keyint:       250
+19:44:14.642: 
+19:44:14.649: libfdk_aac encoder created
+19:44:14.649: libfdk_aac bitrate: 160, channels: 2
+19:44:14.651: ==== Recording Start ===============================================
+19:44:14.651: [mp4 output: 'simple_file_output'] Writing Hybrid MP4/MOV file '/home/troy_chan55/MyStuff/obs-recordings/2026-04-25 19-44-14.mp4'...
+19:46:43.807: [mp4 muxer: 'simple_file_output'] Flushing final fragment...
+19:46:43.811: [mp4 muxer: 'simple_file_output'] Number of fragments: 18
+19:46:43.815: [mp4 muxer: 'simple_file_output'] Full moov size: 80 KiB
+19:46:43.815: [mp4 muxer: 'simple_file_output'] Final mdat size: 111587 KiB
+19:46:43.815: Output 'simple_file_output': stopping
+19:46:43.815: Output 'simple_file_output': Total frames output: 4454
+19:46:43.816: Output 'simple_file_output': Total drawn frames: 4475
+19:46:43.817: [mp4 output: 'simple_file_output'] Waiting for file writer to finish...
+19:46:43.818: ==== Recording Stop ================================================
+19:46:43.821: [mp4 output: 'simple_file_output'] File output complete. Finalization took 13 ms.
+19:46:43.848: libfdk_aac encoder destroyed
+19:55:06.677: ---------------------------------
+19:55:06.677: [x264 encoder: 'simple_video_stream'] preset: veryfast
+19:55:06.677: [x264 encoder: 'simple_video_stream'] settings:
+19:55:06.677: 	rate_control: CBR
+19:55:06.677: 	bitrate:      6000
+19:55:06.677: 	buffer size:  6000
+19:55:06.677: 	crf:          23
+19:55:06.677: 	fps_num:      30
+19:55:06.677: 	fps_den:      1
+19:55:06.677: 	width:        1280
+19:55:06.677: 	height:       720
+19:55:06.677: 	keyint:       250
+19:55:06.677: 
+19:55:06.683: libfdk_aac encoder created
+19:55:06.683: libfdk_aac bitrate: 160, channels: 2
+19:55:06.685: ==== Recording Start ===============================================
+19:55:06.685: [mp4 output: 'simple_file_output'] Writing Hybrid MP4/MOV file '/home/troy_chan55/MyStuff/obs-recordings/2026-04-25 19-55-06.mp4'...
+20:55:36.633: [mp4 muxer: 'simple_file_output'] Flushing final fragment...
+20:55:36.635: [mp4 muxer: 'simple_file_output'] Number of fragments: 436
+20:55:36.678: [mp4 muxer: 'simple_file_output'] Full moov size: 1946 KiB
+20:55:36.678: [mp4 muxer: 'simple_file_output'] Final mdat size: 2730594 KiB
+20:55:36.678: Output 'simple_file_output': stopping
+20:55:36.678: Output 'simple_file_output': Total frames output: 108877
+20:55:36.678: Output 'simple_file_output': Total drawn frames: 108899 (108900 attempted)
+20:55:36.678: Output 'simple_file_output': Number of lagged frames due to rendering lag/stalls: 1 (0.0%)
+20:55:36.678: [mp4 output: 'simple_file_output'] Waiting for file writer to finish...
+20:55:36.678: ==== Recording Stop ================================================
+20:55:36.679: [mp4 output: 'simple_file_output'] File output complete. Finalization took 45 ms.
+20:55:36.689: libfdk_aac encoder destroyed
+20:55:50.465: ---------------------------------
+20:55:50.465: [x264 encoder: 'simple_video_stream'] preset: veryfast
+20:55:50.465: [x264 encoder: 'simple_video_stream'] settings:
+20:55:50.465: 	rate_control: CBR
+20:55:50.465: 	bitrate:      6000
+20:55:50.465: 	buffer size:  6000
+20:55:50.465: 	crf:          23
+20:55:50.465: 	fps_num:      30
+20:55:50.465: 	fps_den:      1
+20:55:50.465: 	width:        1280
+20:55:50.465: 	height:       720
+20:55:50.465: 	keyint:       250
+20:55:50.465: 
+20:55:50.471: libfdk_aac encoder created
+20:55:50.471: libfdk_aac bitrate: 160, channels: 2
+20:55:50.473: ==== Recording Start ===============================================
+20:55:50.474: [mp4 output: 'simple_file_output'] Writing Hybrid MP4/MOV file '/home/troy_chan55/MyStuff/obs-recordings/2026-04-25 20-55-50.mp4'...
+20:59:04.639: [mp4 muxer: 'simple_file_output'] Flushing final fragment...
+20:59:04.641: [mp4 muxer: 'simple_file_output'] Number of fragments: 24
+20:59:04.645: [mp4 muxer: 'simple_file_output'] Full moov size: 105 KiB
+20:59:04.645: [mp4 muxer: 'simple_file_output'] Final mdat size: 145421 KiB
+20:59:04.645: Output 'simple_file_output': stopping
+20:59:04.645: Output 'simple_file_output': Total frames output: 5803
+20:59:04.645: Output 'simple_file_output': Total drawn frames: 5825
+20:59:04.646: [mp4 output: 'simple_file_output'] Waiting for file writer to finish...
+20:59:04.646: [mp4 output: 'simple_file_output'] File output complete. Finalization took 6 ms.
+20:59:04.650: ==== Recording Stop ================================================
+20:59:04.664: libfdk_aac encoder destroyed
+21:03:28.782: ---------------------------------
+21:03:28.782: [x264 encoder: 'simple_video_stream'] preset: veryfast
+21:03:28.782: [x264 encoder: 'simple_video_stream'] settings:
+21:03:28.782: 	rate_control: CBR
+21:03:28.782: 	bitrate:      6000
+21:03:28.782: 	buffer size:  6000
+21:03:28.782: 	crf:          23
+21:03:28.782: 	fps_num:      30
+21:03:28.782: 	fps_den:      1
+21:03:28.782: 	width:        1280
+21:03:28.782: 	height:       720
+21:03:28.782: 	keyint:       250
+21:03:28.782: 
+21:03:28.784: libfdk_aac encoder created
+21:03:28.784: libfdk_aac bitrate: 160, channels: 2
+21:03:28.786: ==== Recording Start ===============================================
+21:03:28.786: [mp4 output: 'simple_file_output'] Writing Hybrid MP4/MOV file '/home/troy_chan55/MyStuff/obs-recordings/2026-04-25 21-03-28.mp4'...
+21:05:52.910: [mp4 muxer: 'simple_file_output'] Flushing final fragment...
+21:05:52.913: [mp4 muxer: 'simple_file_output'] Number of fragments: 26
+21:05:52.916: [mp4 muxer: 'simple_file_output'] Full moov size: 78 KiB
+21:05:52.916: [mp4 muxer: 'simple_file_output'] Final mdat size: 107802 KiB
+21:05:52.916: Output 'simple_file_output': stopping
+21:05:52.916: Output 'simple_file_output': Total frames output: 4303
+21:05:52.916: Output 'simple_file_output': Total drawn frames: 4324
+21:05:52.917: [mp4 output: 'simple_file_output'] Waiting for file writer to finish...
+21:05:52.919: ==== Recording Stop ================================================
+21:05:52.922: [mp4 output: 'simple_file_output'] File output complete. Finalization took 11 ms.
+21:05:52.929: libfdk_aac encoder destroyed
+10:46:58.047: ---------------------------------
+10:46:58.047: [x264 encoder: 'simple_video_stream'] preset: veryfast
+10:46:58.047: [x264 encoder: 'simple_video_stream'] settings:
+10:46:58.047: 	rate_control: CBR
+10:46:58.047: 	bitrate:      6000
+10:46:58.047: 	buffer size:  6000
+10:46:58.047: 	crf:          23
+10:46:58.047: 	fps_num:      30
+10:46:58.047: 	fps_den:      1
+10:46:58.047: 	width:        1280
+10:46:58.047: 	height:       720
+10:46:58.047: 	keyint:       250
+10:46:58.047: 
+10:46:58.054: libfdk_aac encoder created
+10:46:58.054: libfdk_aac bitrate: 160, channels: 2
+10:46:58.056: ==== Recording Start ===============================================
+10:46:58.056: [mp4 output: 'simple_file_output'] Writing Hybrid MP4/MOV file '/home/troy_chan55/MyStuff/obs-recordings/2026-04-26 10-46-58.mp4'...
+10:51:53.817: [mp4 muxer: 'simple_file_output'] Flushing final fragment...
+10:51:53.819: [mp4 muxer: 'simple_file_output'] Number of fragments: 36
+10:51:53.823: [mp4 muxer: 'simple_file_output'] Full moov size: 159 KiB
+10:51:53.823: [mp4 muxer: 'simple_file_output'] Final mdat size: 221892 KiB
+10:51:53.823: Output 'simple_file_output': stopping
+10:51:53.823: Output 'simple_file_output': Total frames output: 8852
+10:51:53.823: Output 'simple_file_output': Total drawn frames: 8873
+10:51:53.823: [mp4 output: 'simple_file_output'] Waiting for file writer to finish...
+10:51:53.823: [mp4 output: 'simple_file_output'] File output complete. Finalization took 6 ms.
+10:51:53.824: ==== Recording Stop ================================================
+10:51:53.836: libfdk_aac encoder destroyed
+11:01:08.762: ---------------------------------
+11:01:08.762: [x264 encoder: 'simple_video_stream'] preset: veryfast
+11:01:08.763: [x264 encoder: 'simple_video_stream'] settings:
+11:01:08.763: 	rate_control: CBR
+11:01:08.763: 	bitrate:      6000
+11:01:08.763: 	buffer size:  6000
+11:01:08.763: 	crf:          23
+11:01:08.763: 	fps_num:      30
+11:01:08.763: 	fps_den:      1
+11:01:08.763: 	width:        1280
+11:01:08.763: 	height:       720
+11:01:08.763: 	keyint:       250
+11:01:08.763: 
+11:01:08.769: libfdk_aac encoder created
+11:01:08.769: libfdk_aac bitrate: 160, channels: 2
+11:01:08.771: ==== Recording Start ===============================================
+11:01:08.771: [mp4 output: 'simple_file_output'] Writing Hybrid MP4/MOV file '/home/troy_chan55/MyStuff/obs-recordings/2026-04-26 11-01-08.mp4'...
+11:02:21.874: [mp4 muxer: 'simple_file_output'] Flushing final fragment...
+11:02:21.877: [mp4 muxer: 'simple_file_output'] Number of fragments: 9
+11:02:21.879: [mp4 muxer: 'simple_file_output'] Full moov size: 40 KiB
+11:02:21.879: [mp4 muxer: 'simple_file_output'] Final mdat size: 54378 KiB
+11:02:21.879: Output 'simple_file_output': stopping
+11:02:21.879: Output 'simple_file_output': Total frames output: 2173
+11:02:21.879: Output 'simple_file_output': Total drawn frames: 2193
+11:02:21.879: [mp4 output: 'simple_file_output'] Waiting for file writer to finish...
+11:02:21.881: ==== Recording Stop ================================================
+11:02:21.886: [mp4 output: 'simple_file_output'] File output complete. Finalization took 11 ms.
+11:02:21.897: libfdk_aac encoder destroyed
+08:24:30.544: ==== Shutting down ==================================================
+08:24:30.550: pulse-input: Stopped recording from 'alsa_output.usb-HP__Inc_HyperX_Cloud_Stinger_2_Wireless_0-00.analog-stereo.monitor'
+08:24:30.550: pulse-input: Got 1098807 packets with 1318568400 frames
+08:24:30.550: Deduplication logic stopped.
+08:24:30.551: pulse-input: Stopped recording from 'alsa_input.usb-HP__Inc_HyperX_Cloud_Stinger_2_Wireless_0-00.mono-fallback'
+08:24:30.551: pulse-input: Got 1098664 packets with 1318396800 frames
+08:24:30.551: [pipewire] Stream 0x55d0729d88e0 state: "paused" (error: none)
+08:24:30.552: [pipewire] Stream 0x55d0729d88e0 state: "unconnected" (error: none)
+08:24:30.560: [pipewire] Stream 0x55d0729a36c0 state: "unconnected" (error: none)
+08:24:30.611: All scene data cleared
+08:24:30.611: ------------------------------------------------
+08:24:30.615: Tried to call obs_frontend_remove_event_callback with no callbacks!
+08:24:30.674: [obs-websocket] [obs_module_unload] Shutting down...
+08:24:30.674: Tried to call obs_frontend_remove_event_callback with no callbacks!
+08:24:30.674: [obs-websocket] [obs_module_unload] Finished shutting down.
+08:24:30.693: [Scripting] Total detached callbacks: 0
+08:24:30.693: Freeing OBS context data
+08:24:30.713: == Profiler Results =============================
+08:24:30.713: run_program_init: 548.844 ms
+08:24:30.713:  ┣OBSApp::AppInit: 26.339 ms
+08:24:30.713:  ┃ ┗OBSApp::InitLocale: 1.835 ms
+08:24:30.713:  ┗OBSApp::OBSInit: 484.885 ms
+08:24:30.713:    ┣obs_startup: 1.594 ms
+08:24:30.713:    ┗OBSBasic::OBSInit: 432.52 ms
+08:24:30.713:      ┣OBSBasic::InitBasicConfig: 0.631 ms
+08:24:30.713:      ┣OBSBasic::ResetAudio: 0.29 ms
+08:24:30.713:      ┣OBSBasic::ResetVideo: 109.49 ms
+08:24:30.713:      ┃ ┗obs_init_graphics: 106.128 ms
+08:24:30.713:      ┃   ┗shader compilation: 33.793 ms
+08:24:30.713:      ┣OBSBasic::InitOBSCallbacks: 0.002 ms
+08:24:30.713:      ┣OBSBasic::InitHotkeys: 0.024 ms
+08:24:30.713:      ┣obs_load_all_modules2: 199.93 ms
+08:24:30.713:      ┃ ┣obs_init_module(decklink-captions.so): 0 ms
+08:24:30.713:      ┃ ┣obs_init_module(decklink-output-ui.so): 0 ms
+08:24:30.713:      ┃ ┣obs_init_module(decklink.so): 0.081 ms
+08:24:30.713:      ┃ ┣obs_init_module(frontend-tools.so): 103.162 ms
+08:24:30.713:      ┃ ┣obs_init_module(image-source.so): 0.007 ms
+08:24:30.713:      ┃ ┣obs_init_module(linux-alsa.so): 0.001 ms
+08:24:30.713:      ┃ ┣obs_init_module(linux-capture.so): 0 ms
+08:24:30.713:      ┃ ┣obs_init_module(linux-jack.so): 0.001 ms
+08:24:30.713:      ┃ ┣obs_init_module(linux-pipewire.so): 16.411 ms
+08:24:30.713:      ┃ ┣obs_init_module(linux-pulseaudio.so): 0.002 ms
+08:24:30.713:      ┃ ┣obs_init_module(linux-v4l2.so): 3.781 ms
+08:24:30.713:      ┃ ┣obs_init_module(obs-ffmpeg.so): 0.608 ms
+08:24:30.713:      ┃ ┣obs_init_module(obs-filters.so): 0.02 ms
+08:24:30.713:      ┃ ┣obs_init_module(obs-libfdk.so): 0.001 ms
+08:24:30.713:      ┃ ┣obs_init_module(obs-nvenc.so): 0.152 ms
+08:24:30.713:      ┃ ┃ ┗nvenc_check: 0.13 ms
+08:24:30.713:      ┃ ┣obs_init_module(obs-outputs.so): 0.004 ms
+08:24:30.713:      ┃ ┣obs_init_module(obs-qsv11.so): 0.998 ms
+08:24:30.713:      ┃ ┣obs_init_module(obs-transitions.so): 0.007 ms
+08:24:30.713:      ┃ ┣obs_init_module(obs-vst.so): 0.001 ms
+08:24:30.713:      ┃ ┣obs_init_module(obs-webrtc.so): 0.002 ms
+08:24:30.713:      ┃ ┣obs_init_module(obs-websocket.so): 4.684 ms
+08:24:30.713:      ┃ ┣obs_init_module(obs-x264.so): 0.001 ms
+08:24:30.713:      ┃ ┣obs_init_module(rtmp-services.so): 0.307 ms
+08:24:30.713:      ┃ ┗obs_init_module(text-freetype2.so): 0.007 ms
+08:24:30.713:      ┣OBSBasic::InitService: 2.092 ms
+08:24:30.713:      ┣OBSBasic::ResetOutputs: 0.108 ms
+08:24:30.713:      ┣OBSBasic::CreateHotkeys: 0.021 ms
+08:24:30.713:      ┣OBSBasic::InitPrimitives: 0.09 ms
+08:24:30.713:      ┗OBSBasic::Load: 61.86 ms
+08:24:30.713: obs_hotkey_thread(25 ms): min=0 ms, median=0.001 ms, max=9.722 ms, 99th percentile=0.002 ms, 100% below 25 ms
+08:24:30.713: audio_thread(Audio): min=0.006 ms, median=0.187 ms, max=76.915 ms, 99th percentile=1.426 ms
+08:24:30.713:  ┗receive_audio: min=0.001 ms, median=0.246 ms, max=46.182 ms, 99th percentile=1.305 ms, 0.288118 calls per parent call
+08:24:30.713:    ┣buffer_audio: min=0 ms, median=0.002 ms, max=2.975 ms, 99th percentile=0.007 ms
+08:24:30.713:    ┗do_encode: min=0.057 ms, median=0.239 ms, max=46.177 ms, 99th percentile=1.292 ms
+08:24:30.713:      ┣encode(simple_aac): min=0.054 ms, median=0.217 ms, max=24.762 ms, 99th percentile=1.154 ms
+08:24:30.713:      ┗send_packet: min=0.001 ms, median=0.014 ms, max=46.028 ms, 99th percentile=0.125 ms
+08:24:30.713: obs_graphics_thread(33.3333 ms): min=0.101 ms, median=1.027 ms, max=1087.56 ms, 99th percentile=3.114 ms, 99.9803% below 33.333 ms
+08:24:30.713:  ┣tick_sources: min=0 ms, median=0.021 ms, max=27.936 ms, 99th percentile=0.056 ms
+08:24:30.713:  ┣output_frame: min=0.073 ms, median=0.494 ms, max=145.449 ms, 99th percentile=1.741 ms
+08:24:30.713:  ┃ ┣gs_context(video->graphics): min=0.073 ms, median=0.475 ms, max=145.046 ms, 99th percentile=1.07 ms
+08:24:30.713:  ┃ ┃ ┣render_video: min=0.016 ms, median=0.157 ms, max=23.012 ms, 99th percentile=0.417 ms
+08:24:30.713:  ┃ ┃ ┃ ┣render_main_texture: min=0.012 ms, median=0.126 ms, max=23.004 ms, 99th percentile=0.255 ms
+08:24:30.713:  ┃ ┃ ┃ ┣render_output_texture: min=0.013 ms, median=0.045 ms, max=3.15 ms, 99th percentile=0.11 ms, 0.288334 calls per parent call
+08:24:30.713:  ┃ ┃ ┃ ┣render_convert_texture: min=0.019 ms, median=0.057 ms, max=12.498 ms, 99th percentile=0.134 ms, 0.288334 calls per parent call
+08:24:30.713:  ┃ ┃ ┃ ┗stage_output_texture: min=0.012 ms, median=0.036 ms, max=3.908 ms, 99th percentile=0.089 ms, 0.288334 calls per parent call
+08:24:30.713:  ┃ ┃ ┣gs_flush: min=0.035 ms, median=0.205 ms, max=142.974 ms, 99th percentile=0.559 ms
+08:24:30.714:  ┃ ┃ ┗download_frame: min=0 ms, median=0.167 ms, max=64.958 ms, 99th percentile=0.323 ms, 0.288334 calls per parent call
+08:24:30.714:  ┃ ┗output_video_data: min=0.123 ms, median=0.415 ms, max=25.167 ms, 99th percentile=1.343 ms, 0.288286 calls per parent call
+08:24:30.714:  ┗render_displays: min=0.004 ms, median=0.413 ms, max=1086.83 ms, 99th percentile=1.529 ms
+08:24:30.714: video_thread(video): min=0.609 ms, median=2.243 ms, max=54.614 ms, 99th percentile=5.827 ms
+08:24:30.714:  ┗receive_video: min=0.608 ms, median=2.238 ms, max=54.612 ms, 99th percentile=5.802 ms
+08:24:30.714:    ┗do_encode: min=0.607 ms, median=2.236 ms, max=54.611 ms, 99th percentile=5.8 ms
+08:24:30.714:      ┣encode(simple_video_stream): min=0.585 ms, median=2.192 ms, max=54.598 ms, 99th percentile=5.665 ms
+08:24:30.714:      ┗send_packet: min=0.004 ms, median=0.023 ms, max=39.012 ms, 99th percentile=0.15 ms
+08:24:30.714: =================================================
+08:24:30.714: == Profiler Time Between Calls ==================
+08:24:30.714: obs_hotkey_thread(25 ms): min=25.014 ms, median=25.118 ms, max=1784.74 ms, 97.4517% within ±2% of 25 ms (0% lower, 2.54835% higher)
+08:24:30.714: obs_graphics_thread(33.3333 ms): min=0.362 ms, median=33.334 ms, max=1787.92 ms, 97.4818% within ±2% of 33.333 ms (1.25735% lower, 1.26087% higher)
+08:24:30.714: =================================================
+08:24:30.837: Number of memory leaks: 0
